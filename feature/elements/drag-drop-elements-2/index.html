@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]> <html lang="en-US" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en-US" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-US" class="no-ie no-js"> <!--<![endif]-->
+
+<!-- Mirrored from the-wedding-day.vamtam.com/feature/elements/drag-drop-elements-2/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Nov 2021 15:12:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"9700abca30",applicationID:"9339867"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1211.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="pingback" href="../../../xmlrpc.php" />
+<title>Drag &#038; Drop Elements 2 &#8211; Nick &amp; Sarah</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Nick &amp; Sarah &raquo; Feed" href="../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Nick &amp; Sarah &raquo; Comments Feed" href="../../../comments/feed/index.html" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/the-wedding-day.vamtam.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.3"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='layerslider-css' href='../../../wp-content/plugins/layerslider/static/layerslider/css/layerslider2cfc.css?ver=6.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ls-google-fonts-css' href='https://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min76f3.css?ver=5.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='../../../wp-content/plugins/contact-form-7/includes/css/styles91d5.css?ver=5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='honeypot-comments-plugin-styles-css' href='../../../wp-content/plugins/honeypot-comments/public/assets/css/public8a54.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelement-css' href='../../../wp-includes/js/mediaelement/mediaelementplayer-legacy.min08e1.css?ver=4.2.16' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href='../../../wp-includes/js/mediaelement/wp-mediaelement.min76f3.css?ver=5.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wpv-gfonts-css' href='http://fonts.googleapis.com/css?family=Cinzel%3Anormal%7CClicker+Script%3Anormal%2C300%7CCinzel+Decorative%3Anormal&amp;subset=cyrillic%2Cgreek%2Clatin&amp;ver=24' type='text/css' media='all' />
+<link rel='stylesheet' id='front-magnific-popup-css' href='../../../wp-content/themes/the-wedding-day/wpv_theme/assets/css/magnific76f3.css?ver=5.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='vamtam-front-all-css' href='../../../wp-content/themes/the-wedding-day/cache/all598c.css?ver=1616512133' type='text/css' media='all' />
+<style id='vamtam-front-all-inline-css' type='text/css'>
+@media (min-width: 1300px) {
+  body.full header.main-header .first-row { background-size: 101% auto; }
+}
+
+.page-id-6172 header.main-header .first-row,
+body.page-id-6172 {
+ background: #fff;
+}
+
+body.page-id-6172 .copyrights { display: none }
+</style>
+<script type='text/javascript' id='layerslider-greensock-js-extra'>
+/* <![CDATA[ */
+var LS_Meta = {"v":"6.9.2"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/layerslider/static/layerslider/js/greensockb3a6.js?ver=1.19.0' id='layerslider-greensock-js'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/jquery.min9d52.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='../../../wp-content/plugins/layerslider/static/layerslider/js/layerslider.kreaturamedia.jquery2cfc.js?ver=6.9.2' id='layerslider-js'></script>
+<script type='text/javascript' src='../../../wp-content/plugins/layerslider/static/layerslider/js/layerslider.transitions2cfc.js?ver=6.9.2' id='layerslider-transitions-js'></script>
+<script type='text/javascript' src='../../../wp-content/plugins/vamtam-love-it/includes/js/jquery.cookie76f3.js?ver=5.7.3' id='jquery-cookie-js'></script>
+<script type='text/javascript' id='love-it-js-extra'>
+/* <![CDATA[ */
+var love_it_vars = {"ajaxurl":"https:\/\/the-wedding-day.vamtam.com\/wp-admin\/admin-ajax.php","nonce":"5decbc4b18","already_loved_message":"You have already loved this item.","error_message":"Sorry, there was a problem processing your request.","logged_in":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/vamtam-love-it/includes/js/love-it76f3.js?ver=5.7.3' id='love-it-js'></script>
+<script type='text/javascript' src='../../../wp-content/plugins/wp-retina-2x/app/retina.mina6c3.js?ver=1610451730' id='wr2x-retinajs-js-js'></script>
+<script type='text/javascript' src='../../../wp-content/plugins/honeypot-comments/public/assets/js/public8a54.js?ver=1.0.0' id='honeypot-comments-plugin-script-js'></script>
+<script type='text/javascript' src='../../../wp-content/themes/the-wedding-day/vamtam/assets/js/modernizr.min76f3.js?ver=5.7.3' id='modernizr-js'></script>
+<meta name="generator" content="Powered by LayerSlider 6.9.2 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress." />
+
+<link rel="https://api.w.org/" href="../../../wp-json/index.html" /><link rel="alternate" type="application/json" href="../../../wp-json/wp/v2/pages/255.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.7.3" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../../../index0c93.html?p=255' />
+<link rel="alternate" type="application/json+oembed" href="../../../wp-json/oembed/1.0/embede95d.json?url=https%3A%2F%2Fthe-wedding-day.vamtam.com%2Ffeature%2Felements%2Fdrag-drop-elements-2%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../../../wp-json/oembed/1.0/embedbb4b?url=https%3A%2F%2Fthe-wedding-day.vamtam.com%2Ffeature%2Felements%2Fdrag-drop-elements-2%2F&amp;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+<body class="page-template-default page page-id-255 page-child parent-pageid-254 layout-full boxed pagination-load-more has-page-header cbox-share-twitter cbox-share-facebook cbox-share-googleplus cbox-share-pinterest no-header-slider no-header-sidebars responsive-layout no-breadcrumbs no-slider-button-thumbnails">
+<span id="top"></span>
+<div id="page" class="main-container">
+<div class="fixed-header-box">
+<header class="main-header">
+<div class="first-row">
+<a href="#" id="mp-menu-trigger" class="icon-b" data-icon="&#57801;">Open/Close Menu</a>
+<div class="logo-wrapper">
+<a href="../../../index.html" title="Nick &amp; Sarah" class="logo "> <img src="../../../wp-content/uploads/2013/10/Logo.png" alt="Nick &amp; Sarah" class="hide-hidpi" />
+<img src="../../../wp-content/uploads/2013/10/Logo%402x.png" alt="Nick &amp; Sarah" class="show-hidpi-inline" height="112" />
+</a>
+<div class="clearboth"></div>
+<a href="../../../index.html" title="Nick &amp; Sarah" class="combined-logo-title">
+<div class="site-title-part left-name">Nick</div>
+<div class="site-title-part name-delimiter">&amp;</div>
+<div class="site-title-part right-name">Sarah</div>
+</a>
+<span class="logo-tagline">ARE GETTING MARRIED!</span>
+</div>
+</div>
+<div class="second-row">
+<div class="limit-wrapper">
+<div class="second-row-columns">
+<div class="header-center">
+<div id="menus">
+<nav id="main-menu">
+<a href="#main" title="Skip to content" class="visuallyhidden">Skip to content</a>
+<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-8" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-8"><a href="../../../index.html">HOME</a>
+<ul class="sub-menu">
+<li id="menu-item-6884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-6884"><a href="../../../index.html">Home</a></li>
+<li id="menu-item-6866" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6866"><a href="../../../home-layouts/home-2/index.html">Home 2</a></li>
+<li id="menu-item-6894" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6894"><a href="../../../get-codes-3/index.html">Get all codes</a></li>
+</ul>
+</li>
+<li id="menu-item-6582" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6582"><a>THE WEDDING</a>
+<ul class="sub-menu">
+<li id="menu-item-227" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-227"><a>Wedding blog</a>
+<ul class="sub-menu">
+<li id="menu-item-282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-282"><a href="../../../blog/blog-layout-3/index.html">Newspaper Style</a></li>
+<li id="menu-item-281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-281"><a href="../../../blog/blog-post-formats/index.html">Blog Post Formats</a></li>
+</ul>
+</li>
+<li id="menu-item-6590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6590"><a href="../../../pages/story/index.html">Our Story</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="../../../pages/about-us/index.html">The ceremony</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="../../../pages/our-mission/index.html">The party</a></li>
+<li id="menu-item-6589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6589"><a href="../../../pages/bridesmaids/index.html">Bridesmaids</a></li>
+<li id="menu-item-6588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6588"><a href="../../../pages/groomsmen/index.html">Groomsmen</a></li>
+<li id="menu-item-6720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6720"><a href="../../../pages/contact-us/index.html">Contact Us</a></li>
+<li id="menu-item-6796" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6796"><a href="../../../get-codes/index.html">Get all codes</a></li>
+</ul>
+</li>
+<li id="menu-item-226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-226"><a>PHOTO ALBUM</a>
+<ul class="sub-menu">
+<li id="menu-item-1852" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1852"><a href="../../../portfolio-layouts/masonry-style/index.html">The Party</a></li>
+<li id="menu-item-287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-287"><a href="../../../portfolio-layouts/sortable-4-columns/index.html">Simple Gallery</a></li>
+<li id="menu-item-6804" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6804"><a href="../../../get-codes-2/index.html">Get all codes</a></li>
+</ul>
+</li>
+<li id="menu-item-6682" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6682"><a href="../../../pages/guestbook/index.html">GUESTBOOK</a></li>
+<li id="menu-item-225" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-225"><a>FEATURES</a>
+<ul class="sub-menu">
+<li id="menu-item-6333" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6333"><a>Templates</a>
+<ul class="sub-menu">
+<li id="menu-item-6341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6341"><a href="../../../templates/blanc-page/index.html">Coming Soon Page</a></li>
+<li id="menu-item-6353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6353"><a href="../../../templates/maintenance-mode/index.html">Maintenance Mode</a></li>
+<li id="menu-item-6339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6339"><a href="../../../templates/body-top-widget-area/index.html">Body Top Widget Area</a></li>
+<li id="menu-item-6342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6342"><a href="../../../templates/right-sidebar/index.html">Right Sidebar</a></li>
+<li id="menu-item-6343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6343"><a href="../../../templates/left-sidebar/index.html">Left Sidebar</a></li>
+<li id="menu-item-6340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6340"><a href="../../../templates/two-sidebars/index.html">Two Sidebars</a></li>
+<li id="menu-item-6345" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6345"><a href="../../../indexcf59.html?s=test">Search</a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42"><a href="../../../404-404.html">Page Not Found</a></li>
+</ul>
+</li>
+<li id="menu-item-262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262"><a href="../typography/index.html">Typography</a></li>
+<li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a href="../icons/index.html">Icons</a></li>
+<li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a href="../../why-buy-the-theme/index.html">Why Buy The Theme</a></li>
+<li id="menu-item-250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-250"><a href="../../hall-of-fame/index.html">Hall of Fame</a></li>
+<li id="menu-item-6143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6143"><a href="../../theme-options-2/index.html">Theme Options</a></li>
+</ul>
+</li>
+</ul></div> </nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<img src="../../../wp-content/themes/the-wedding-day/wpv_theme/assets/images/svg/menu-lines.svg" onerror="this.onerror=null; this.src='../../../wp-content/themes/the-wedding-day/wpv_theme/assets/images/menu-lines.png'" class="menu-lines" />
+</div>
+<div class="shadow-bottom"></div>
+<div class="boxed-layout">
+<div class="page-dash-wrapper">
+<div class="pane-wrapper clearfix">
+<header id="header-middle" class="row normal type-featured" style="min-height:0px">
+<div class="limit-wrapper">
+<div class="header-middle-content">
+</div>
+</div>
+</header> <div id="main-content">
+<div id="sub-header" class="layout-full">
+<div class="meta-header">
+<div class="limit-wrapper">
+<div class="meta-header-inside">
+<header class="page-header ">
+<div class="page-header-content">
+<h1>
+<span class="title" itemprop="headline">Drag &#038; Drop Elements 2</span>
+</h1>
+</div>
+</header> </div>
+</div>
+</div>
+</div> 
+<div id="main" role="main" class="layout-full">
+<div class="limit-wrapper">
+<div class="pane main-pane">
+<div class="row">
+<div class="page-outer-wrapper">
+<div class="clearfix page-wrapper">
+<article id="post-255" class="full post-255 page type-page status-publish hentry">
+<div class="page-content no-image">
+<div class="sep-text single centered">
+<span class="sep-text-before"><div class="sep-text-line"></div></span>
+<div class="content">
+<h2 class="text-divider-double">
+Services Style 1
+</h2> </div>
+<span class="sep-text-after"><div class="sep-text-line"></div></span>
+</div>
+<div class="row "><div class="wpv-grid grid-1-3  wpv-first-level first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-dcec95a8fc7664aa5b0e6971c027505b"><div class="services clearfix fullimage has-image no-icon has-button " style="text-align:center;">
+<div class="services-inside">
+<div class="thumbnail">
+<a href="#" title="Mobile web">
+<img src="../../../../makalu.vamtam.com/wp-content/uploads/2013/03/service-icon-1.png" alt="" />
+</a>
+</div>
+<h3 class="services-title">
+<a href="#" title="Mobile web">Mobile web</a>
+</h3>
+<div class="services-content">
+<ul class="styled-list  icon-accent4">
+<li class=" icon-b theme" data-icon="&#57374;">Tests and Optimization</li>
+<li class=" icon-b theme" data-icon="&#57374;">Graphic Web Design</li>
+<li class=" icon-b theme" data-icon="&#57374;">Usable User Interfaces</li>
+<li class=" icon-b theme" data-icon="&#57374;">Front and Back-End Coding</li>
+<li class=" icon-b theme" data-icon="&#57374;">Advertisment &amp; Print</li>
+<li class=" icon-b theme" data-icon="&#57374;">Search Engine Optimization</li>
+</ul>
+</div>
+<div class="services-button-wrap">
+<a href="#" class="vamtam-button"><span class="btext">View Projects</span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-3  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-a85a8ed078729062d7956de497ff2c89"><div class="services clearfix fullimage has-image no-icon has-button " style="text-align:center;">
+<div class="services-inside">
+<div class="thumbnail">
+<a href="#" title="Mobile web 1">
+<img src="../../../../makalu.vamtam.com/wp-content/uploads/2013/03/service-icon-3.png" alt="" />
+</a>
+</div>
+<h3 class="services-title">
+<a href="#" title="Mobile web 1">Mobile web 1</a>
+</h3>
+<div class="services-content">
+<ul class="styled-list  icon-accent4">
+<li class=" icon-b theme" data-icon="&#57374;">Tests and Optimization</li>
+<li class=" icon-b theme" data-icon="&#57374;">Graphic Web Design</li>
+<li class=" icon-b theme" data-icon="&#57374;">Usable User Interfaces</li>
+<li class=" icon-b theme" data-icon="&#57374;">Front and Back-End Coding</li>
+<li class=" icon-b theme" data-icon="&#57374;">Advertisment &amp; Print</li>
+<li class=" icon-b theme" data-icon="&#57374;">Search Engine Optimization</li>
+</ul>
+</div>
+<div class="services-button-wrap">
+<a href="#" class="vamtam-button"><span class="btext">View Projects</span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-3  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-fc0a972abe0c806e8a1f5190c0310a7a"><div class="services clearfix fullimage has-image no-icon has-button " style="text-align:center;">
+<div class="services-inside">
+<div class="thumbnail">
+<a href="#" title="Mobile web 2">
+<img src="../../../../makalu.vamtam.com/wp-content/uploads/2013/03/service-icon-2.png" alt="" />
+</a>
+</div>
+<h3 class="services-title">
+<a href="#" title="Mobile web 2">Mobile web 2</a>
+</h3>
+<div class="services-content">
+<ul class="styled-list  icon-accent4">
+<li class=" icon-b theme" data-icon="&#57374;">Tests and Optimization</li>
+<li class=" icon-b theme" data-icon="&#57374;">Graphic Web Design</li>
+<li class=" icon-b theme" data-icon="&#57374;">Usable User Interfaces</li>
+<li class=" icon-b theme" data-icon="&#57374;">Front and Back-End Coding</li>
+<li class=" icon-b theme" data-icon="&#57374;">Advertisment &amp; Print</li>
+<li class=" icon-b theme" data-icon="&#57374;">Search Engine Optimization</li>
+</ul>
+</div>
+<div class="services-button-wrap">
+<a href="#" class="vamtam-button"><span class="btext">View Projects</span></a>
+</div>
+</div>
+</div>
+</div></div>
+<div class="wpv-accordion-wrapper"><div class="accordion" data-collapsible="true"><h4 class="tab"><div class="inner">Get the code</div></h4><div class="pane"><div class="inner"><pre class="pre">[column width="1/3" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[services fullimage="true" icon="" icon_color="accent6" icon_size="62" background="transparent" image="https://makalu.vamtam.com/wp-content/uploads/2013/03/service-icon-1.png" title="Mobile web" text_align="justify" button_link="#" button_text="View Projects"]
+[list style="theme-checkmark" color="accent4"]
+&lt;ul&gt;
+	&lt;li&gt;Tests and Optimization&lt;/li&gt;
+	&lt;li&gt;Graphic Web Design&lt;/li&gt;
+	&lt;li&gt;Usable User Interfaces&lt;/li&gt;
+	&lt;li&gt;Front and Back-End Coding&lt;/li&gt;
+	&lt;li&gt;Advertisment &amp; Print&lt;/li&gt;
+	&lt;li&gt;Search Engine Optimization&lt;/li&gt;
+&lt;/ul&gt;
+[/list]
+
+[/services]
+
+[/column]
+
+[column width="1/3" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[services fullimage="true" icon="" icon_color="accent6" icon_size="62" background="transparent" image="https://makalu.vamtam.com/wp-content/uploads/2013/03/service-icon-3.png" title="Mobile web 1" text_align="justify" button_link="#" button_text="View Projects"]
+[list style="theme-checkmark" color="accent4"]
+&lt;ul&gt;
+	&lt;li&gt;Tests and Optimization&lt;/li&gt;
+	&lt;li&gt;Graphic Web Design&lt;/li&gt;
+	&lt;li&gt;Usable User Interfaces&lt;/li&gt;
+	&lt;li&gt;Front and Back-End Coding&lt;/li&gt;
+	&lt;li&gt;Advertisment &amp; Print&lt;/li&gt;
+	&lt;li&gt;Search Engine Optimization&lt;/li&gt;
+&lt;/ul&gt;
+[/list]
+
+[/services]
+
+[/column]
+
+[column width="1/3" last="true" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[services fullimage="true" icon="" icon_color="accent6" icon_size="62" background="transparent" image="https://makalu.vamtam.com/wp-content/uploads/2013/03/service-icon-2.png" title="Mobile web 2" text_align="justify" button_link="#" button_text="View Projects"]
+[list style="theme-checkmark" color="accent4"]
+&lt;ul&gt;
+	&lt;li&gt;Tests and Optimization&lt;/li&gt;
+	&lt;li&gt;Graphic Web Design&lt;/li&gt;
+	&lt;li&gt;Usable User Interfaces&lt;/li&gt;
+	&lt;li&gt;Front and Back-End Coding&lt;/li&gt;
+	&lt;li&gt;Advertisment &amp; Print&lt;/li&gt;
+	&lt;li&gt;Search Engine Optimization&lt;/li&gt;
+&lt;/ul&gt;
+[/list]
+
+[/services]
+
+[/column]</pre></div></div></div></div>
+<div class="push" style='height:30px'></div>
+<div class="sep-text single centered">
+<span class="sep-text-before"><div class="sep-text-line"></div></span>
+<div class="content">
+<h2 class="text-divider-double">
+Services style 2
+</h2> </div>
+<span class="sep-text-after"><div class="sep-text-line"></div></span>
+</div>
+<div class="row "><div class="wpv-grid grid-1-3  wpv-first-level first unextended animation-from-left animated-active" style="padding-top:0px;padding-bottom:0px" id="wpv-column-3eb86db82fd31ca8eb75295860d3ef30"><style scoped>#wpv-expandable-1edeff2eadcf5d17ee207d92f3c237e2 .closed{background:#fff;}#wpv-expandable-1edeff2eadcf5d17ee207d92f3c237e2 .closed,#wpv-expandable-1edeff2eadcf5d17ee207d92f3c237e2 .closed p{color:#808080;}#wpv-expandable-1edeff2eadcf5d17ee207d92f3c237e2 .open{background:#f1f1f1;}#wpv-expandable-1edeff2eadcf5d17ee207d92f3c237e2 .open,#wpv-expandable-1edeff2eadcf5d17ee207d92f3c237e2 .open p{color:#727272;}</style>
+<div class="services has-more " id="wpv-expandable-1edeff2eadcf5d17ee207d92f3c237e2">
+<div class="closed services-inside">
+<div class="services-content-wrapper clearfix">
+<div class="row "><div class="wpv-grid grid-1-5  first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-f0bfc3aa18fae20efb8c54f1cd4f57e4"><div class="push" style='height:10px'></div>
+<span class='icon shortcode theme ' style='font-size:32px !important;color:#000000;'>&#57397;</span></div>
+<div class="wpv-grid grid-4-5  unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-4521bae6f81725f25c9e42baa69e9739"><h2>Unique <strong>Design</strong></h2>
+<ul class="styled-list  icon-accent2">
+<li class=" icon-b " data-icon="&#58011;">We understand you</li>
+<li class=" icon-b " data-icon="&#58011;">We know what is hight quality web</li>
+</ul>
+</div></div>
+</div>
+</div>
+<div class="open services-inside">
+<div class="services-content-wrapper">
+<div class="row">
+<h3>Career Development</h3>
+<p>Vamtam is committed to offering tools and resources to help employees succeed at work and in life.</p>
+<p><a href="#">Read More</a> <span class='icon shortcode theme ' style='font-size:8px !important;color:#000000;'>&#57349;</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-3  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-d10bfb9b927ca1381c967892c0562842"><style scoped>#wpv-expandable-177e4387fbcd99ecbd1e8c17562cac01 .closed{background:#fff;}#wpv-expandable-177e4387fbcd99ecbd1e8c17562cac01 .closed,#wpv-expandable-177e4387fbcd99ecbd1e8c17562cac01 .closed p{color:#808080;}#wpv-expandable-177e4387fbcd99ecbd1e8c17562cac01 .open{background:#f1f1f1;}#wpv-expandable-177e4387fbcd99ecbd1e8c17562cac01 .open,#wpv-expandable-177e4387fbcd99ecbd1e8c17562cac01 .open p{color:#727272;}</style>
+<div class="services has-more " id="wpv-expandable-177e4387fbcd99ecbd1e8c17562cac01">
+<div class="closed services-inside">
+<div class="services-content-wrapper clearfix">
+<div class="row "><div class="wpv-grid grid-1-5  first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-e5e9d8bf3f17f2e779eb777363d790d6"><div class="push" style='height:10px'></div>
+<span class='icon shortcode  ' style='font-size:32px !important;color:#000000;'>&#57835;</span></div>
+<div class="wpv-grid grid-4-5  unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-cd745e29922d993b237ad9651b288f0a"><h2>Premium <strong>Slider</strong></h2>
+<ul class="styled-list  icon-accent2">
+<li class=" icon-b " data-icon="&#58011;">We understand you</li>
+<li class=" icon-b " data-icon="&#58011;">We know what is hight quality web</li>
+</ul>
+</div></div>
+</div>
+</div>
+<div class="open services-inside">
+<div class="services-content-wrapper">
+<div class="row">
+<h3>Career Development</h3>
+<p>Vamtam is committed to offering tools and resources to help employees succeed at work and in life.</p>
+<p><a href="#">Read More</a> <span class='icon shortcode theme ' style='font-size:8px !important;color:#000000;'>&#57349;</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-3  wpv-first-level unextended animation-from-right animated-active" style="padding-top:0px;padding-bottom:0px" id="wpv-column-f1eeef11bb43878bf6dcb1fac97bddd1"><style scoped>#wpv-expandable-62d2d6e93556dd5007df37f9aaec3240 .closed{background:#fff;}#wpv-expandable-62d2d6e93556dd5007df37f9aaec3240 .closed,#wpv-expandable-62d2d6e93556dd5007df37f9aaec3240 .closed p{color:#808080;}#wpv-expandable-62d2d6e93556dd5007df37f9aaec3240 .open{background:#f1f1f1;}#wpv-expandable-62d2d6e93556dd5007df37f9aaec3240 .open,#wpv-expandable-62d2d6e93556dd5007df37f9aaec3240 .open p{color:#727272;}</style>
+<div class="services has-more " id="wpv-expandable-62d2d6e93556dd5007df37f9aaec3240">
+<div class="closed services-inside">
+<div class="services-content-wrapper clearfix">
+<div class="row "><div class="wpv-grid grid-1-5  first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-ae3dc1d9c5b057a3e5b0cfa565e45715"><div class="push" style='height:10px'></div>
+<span class='icon shortcode  ' style='font-size:32px !important;color:#000000;'>&#58141;</span></div>
+<div class="wpv-grid grid-4-5  unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-9dff920c19f50ec191f48b10b16f04fb"><h2>Easy <strong>Styling</strong></h2>
+<ul class="styled-list  icon-accent2">
+<li class=" icon-b " data-icon="&#58011;">We understand you</li>
+<li class=" icon-b " data-icon="&#58011;">We know what is hight quality web</li>
+</ul>
+</div></div>
+</div>
+</div>
+<div class="open services-inside">
+<div class="services-content-wrapper">
+<div class="row">
+<h3>Career Development</h3>
+<p>Vamtam is committed to offering tools and resources to help employees succeed at work and in life.</p>
+<p><a href="#">Read More</a> <span class='icon shortcode theme ' style='font-size:8px !important;color:#000000;'>&#57349;</span>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<div class="wpv-accordion-wrapper"><div class="accordion" data-collapsible="true"><h4 class="tab"><div class="inner">Get the code</div></h4><div class="pane"><div class="inner"><pre class="pre">[column width="1/3" title="undefined" title_type="undefined" animation="from-left" implicit="true"]
+
+[services_expandable background="#ffffff" hover_background="accent8" image="" icon="" icon_color="accent6" icon_size="62"]
+
+[column_1 width="1/5" title="" implicit="true"]
+
+[push h="10"]
+
+[icon name="theme-brush" color="accent2" size="32" inverted_colors="false"]
+
+[/column_1]
+
+[column_1 width="4/5" title="" last="true" implicit="true"]
+&lt;h2&gt;Unique &lt;strong&gt;Design&lt;/strong&gt;&lt;/h2&gt;
+[list style="arrow-right2" color="accent2"]
+&lt;ul&gt;
+	&lt;li&gt;We understand you&lt;/li&gt;
+	&lt;li&gt;We know what is hight quality web&lt;/li&gt;
+&lt;/ul&gt;
+[/list]
+
+[/column_1]
+
+[split]
+&lt;h3&gt;Career Development&lt;/h3&gt;
+Vamtam is committed to offering tools and resources to help employees succeed at work and in life.
+
+&lt;a href="#"&gt;Read More&lt;/a&gt; [icon name="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services_expandable]
+
+[/column]
+
+[column width="1/3" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[services_expandable background="#ffffff" hover_background="accent8" image="" icon="" icon_color="accent6" icon_size="62"]
+
+[column_1 width="1/5" title="" implicit="true"]
+
+[push h="10"]
+
+[icon name="eye1" color="accent2" size="32" inverted_colors="false"]
+
+[/column_1]
+
+[column_1 width="4/5" title="" last="true" implicit="true"]
+&lt;h2&gt;Premium &lt;strong&gt;Slider&lt;/strong&gt;&lt;/h2&gt;
+[list style="arrow-right2" color="accent2"]
+&lt;ul&gt;
+	&lt;li&gt;We understand you&lt;/li&gt;
+	&lt;li&gt;We know what is hight quality web&lt;/li&gt;
+&lt;/ul&gt;
+[/list]
+
+[/column_1]
+
+[split]
+&lt;h3&gt;Career Development&lt;/h3&gt;
+Vamtam is committed to offering tools and resources to help employees succeed at work and in life.
+
+&lt;a href="#"&gt;Read More&lt;/a&gt; [icon name="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services_expandable]
+
+[/column]
+
+[column width="1/3" last="true" title="undefined" title_type="undefined" animation="from-right" implicit="true"]
+
+[services_expandable background="#ffffff" hover_background="accent8" image="" icon="" icon_color="accent6" icon_size="62"]
+
+[column_1 width="1/5" title="" implicit="true"]
+
+[push h="10"]
+
+[icon name="code" color="accent2" size="32" inverted_colors="false"]
+
+[/column_1]
+
+[column_1 width="4/5" title="" last="true" implicit="true"]
+&lt;h2&gt;Easy &lt;strong&gt;Styling&lt;/strong&gt;&lt;/h2&gt;
+[list style="arrow-right2" color="accent2"]
+&lt;ul&gt;
+	&lt;li&gt;We understand you&lt;/li&gt;
+	&lt;li&gt;We know what is hight quality web&lt;/li&gt;
+&lt;/ul&gt;
+[/list]
+
+[/column_1]
+
+[split]
+&lt;h3&gt;Career Development&lt;/h3&gt;
+Vamtam is committed to offering tools and resources to help employees succeed at work and in life.
+
+&lt;a href="#"&gt;Read More&lt;/a&gt; [icon name="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services_expandable]
+
+[/column]</pre></div></div></div></div>
+<div class="push" style='height:30px'></div>
+<div class="sep-text single centered">
+<span class="sep-text-before"><div class="sep-text-line"></div></span>
+<div class="content">
+<h2 class="text-divider-double">
+Services Style 3
+</h2> </div>
+<span class="sep-text-after"><div class="sep-text-line"></div></span>
+</div>
+<div class="row "><div class="wpv-grid grid-1-5  wpv-first-level first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-95f1dd4f5c71f6103ff7bf3286fbe600"><div class="services clearfix smallimage no-image has-icon has-button " style="text-align:left;">
+<div class="services-inside">
+<div class="shrinking-outer clearfix">
+<div class="shrinking" style="background:transparent no-repeat 50% 50%;">
+<a href="#" title="Easy Styling">
+<span class='icon shortcode  ' style='color:#F07677;'>&#57624;</span> </a>
+</div>
+</div>
+<div class="services-content">
+The theme uses a flexible template builder that enables you to create unique pages.<br />
+<div class="push" style='height:5px'></div>
+<a href="#">Read More</a> <span class='icon shortcode theme ' style='font-size:8px !important;color:#000000;'>&#57349;</span>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-5  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-ccb4bf3d1d294b4d25aa4c30a80e992d"><div class="services clearfix smallimage no-image has-icon has-button " style="text-align:left;">
+<div class="services-inside">
+<div class="shrinking-outer clearfix">
+<div class="shrinking" style="background:transparent no-repeat 50% 50%;">
+<a href="#" title="Easy Styling">
+<span class='icon shortcode theme ' style='color:#F07677;'>&#57359;</span> </a>
+</div>
+</div>
+<div class="services-content">
+The theme uses a flexible template builder that enables you to create unique pages.<br />
+<div class="push" style='height:5px'></div>
+<a href="#">Read More</a> <span class='icon shortcode theme ' style='font-size:8px !important;color:#000000;'>&#57349;</span>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-5  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-d6d63784a262eba28d1276cfafe7ef45"><div class="services clearfix smallimage no-image has-icon has-button " style="text-align:left;">
+<div class="services-inside">
+<div class="shrinking-outer clearfix">
+<div class="shrinking" style="background:transparent no-repeat 50% 50%;">
+<a href="#" title="Easy Styling">
+<span class='icon shortcode  ' style='color:#F07677;'>&#57418;</span> </a>
+</div>
+</div>
+<div class="services-content">
+The theme uses a flexible template builder that enables you to create unique pages.<br />
+<div class="push" style='height:5px'></div>
+<a href="#">Read More</a> <span class='icon shortcode theme ' style='font-size:8px !important;color:#000000;'>&#57349;</span>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-5  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-4da3065039282cde3da6b84d60ac3eee"><div class="services clearfix smallimage no-image has-icon has-button " style="text-align:left;">
+<div class="services-inside">
+<div class="shrinking-outer clearfix">
+<div class="shrinking" style="background:transparent no-repeat 50% 50%;">
+<a href="#" title="Easy Styling">
+<span class='icon shortcode  ' style='color:#F07677;'>&#57750;</span> </a>
+</div>
+</div>
+<div class="services-content">
+The theme uses a flexible template builder that enables you to create unique pages.<br />
+<div class="push" style='height:5px'></div>
+<a href="#">Read More</a> <span class='icon shortcode theme ' style='font-size:8px !important;color:#000000;'>&#57349;</span>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-5  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-0e596b9360b2cd92143ff3a9a85e46d0"><div class="services clearfix smallimage no-image has-icon has-button " style="text-align:left;">
+<div class="services-inside">
+<div class="shrinking-outer clearfix">
+<div class="shrinking" style="background:transparent no-repeat 50% 50%;">
+<a href="#" title="Easy Styling">
+<span class='icon shortcode  ' style='color:#F07677;'>&#57805;</span> </a>
+</div>
+</div>
+<div class="services-content">
+The theme uses a flexible template builder that enables you to create unique pages.<br />
+<div class="push" style='height:5px'></div>
+<a href="#">Read More</a> <span class='icon shortcode theme ' style='font-size:8px !important;color:#000000;'>&#57349;</span>
+</div>
+</div>
+</div>
+</div></div>
+<div class="wpv-accordion-wrapper"><div class="accordion" data-collapsible="true"><h4 class="tab"><div class="inner">Get the code</div></h4><div class="pane"><div class="inner"><pre class="pre">[column width="1/5" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[services fullimage="false" icon="user2" icon_color="accent2" icon_size="16" background="transparent" image="" title="" text_align="left" button_link="#" button_text="Easy Styling"]
+The theme uses a flexible template builder that enables you to create unique pages.
+[push h="5"]
+&lt;a href="#"&gt;Read More&lt;/a&gt; [icon name="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services]
+
+[/column]
+
+[column width="1/5" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[services fullimage="false" icon="theme-lock" icon_color="accent2" icon_size="16" background="transparent" image="" title="" text_align="left" button_link="#" button_text="Easy Styling"]
+The theme uses a flexible template builder that enables you to create unique pages.
+[push h="5"]
+&lt;a href="#"&gt;Read More&lt;/a&gt; [icon name="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services]
+
+[/column]
+
+[column width="1/5" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[services fullimage="false" icon="books" icon_color="accent2" icon_size="16" background="transparent" image="" title="" text_align="left" button_link="#" button_text="Easy Styling"]
+The theme uses a flexible template builder that enables you to create unique pages.
+[push h="5"]
+&lt;a href="#"&gt;Read More&lt;/a&gt; [icon name="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services]
+
+[/column]
+
+[column width="1/5" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[services fullimage="false" icon="briefcase" icon_color="accent2" icon_size="16" background="transparent" image="" title="" text_align="left" button_link="#" button_text="Easy Styling"]
+The theme uses a flexible template builder that enables you to create unique pages.
+[push h="5"]
+&lt;a href="#"&gt;Read More&lt;/a&gt; [icon name="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services]
+
+[/column]
+
+[column width="1/5" last="true" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[services fullimage="false" icon="cloud" icon_color="accent2" icon_size="16" background="transparent" image="" title="" text_align="left" button_link="#" button_text="Easy Styling"]
+The theme uses a flexible template builder that enables you to create unique pages.
+[push h="5"]
+&lt;a href="#"&gt;Read More&lt;/a&gt; [icon name="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services]
+
+[/column]</pre></div></div></div></div>
+<div class="push" style='height:30px'></div>
+<div class="sep-text single centered">
+<span class="sep-text-before"><div class="sep-text-line"></div></span>
+<div class="content">
+<h2 class="text-divider-double">
+Services Style 4
+</h2> </div>
+<span class="sep-text-after"><div class="sep-text-line"></div></span>
+</div>
+<div class="row "><div class="wpv-grid grid-1-1  wpv-first-level first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-2253f5a898da990a1b59732ed107f4e0"><div class="row "><div class="wpv-grid grid-1-5  first unextended animation-from-left animated-active" style="padding-top:0px;padding-bottom:0px" id="wpv-column-90c5d5e4a0f6391e35c938d19fd1b68a"><div class="services clearfix smallimage no-image has-icon has-button " style="text-align:left;">
+<div class="services-inside">
+<div class="shrinking-outer clearfix">
+<div class="shrinking" style="background:#FFF8F3 no-repeat 50% 50%;">
+<a href="#" title="">
+<span class='icon shortcode theme ' style='color:#898989;'>&#57360;</span> </a>
+</div>
+</div>
+<h3 class="services-title">
+<a href="#" title="Mobile Friendly">Mobile Friendly</a>
+</h3>
+<div class="services-content">
+The theme uses a flexible template builder that enables you to create unique pages. <div class="push" style='height:5px'></div> <a href="#">Read More</a> <span class='icon shortcode  theme-angle-right' style='font-size:8px !important;color:#000000;'></span>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-5  unextended animation-from-left animated-active" style="padding-top:0px;padding-bottom:0px" id="wpv-column-ba3b763d0a7ef2673481c4453c696c8e"><div class="services clearfix smallimage no-image has-icon has-button " style="text-align:left;">
+<div class="services-inside">
+<div class="shrinking-outer clearfix">
+<div class="shrinking" style="background:#FFF8F3 no-repeat 50% 50%;">
+<a href="#" title="">
+<span class='icon shortcode  ' style='color:#898989;'>&#57481;</span> </a>
+</div>
+</div>
+<h3 class="services-title">
+<a href="#" title="Shop">Shop</a>
+</h3>
+<div class="services-content">
+The theme uses a flexible template builder that enables you to create unique pages. <div class="push" style='height:5px'></div> <a href="#">Read More</a> <span class='icon shortcode  theme-angle-right' style='font-size:8px !important;color:#000000;'></span>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-5  unextended animation-fade-in animated-active" style="padding-top:0px;padding-bottom:0px" id="wpv-column-3f7b3da5d4ba2e7ffd3a87ed36f210b1"><div class="services clearfix smallimage no-image has-icon has-button " style="text-align:left;">
+<div class="services-inside">
+<div class="shrinking-outer clearfix">
+<div class="shrinking" style="background:#FFF8F3 no-repeat 50% 50%;">
+<a href="#" title="">
+<span class='icon shortcode theme ' style='color:#898989;'>&#57397;</span> </a>
+</div>
+</div>
+<h3 class="services-title">
+<a href="#" title="Easy Styling">Easy Styling</a>
+</h3>
+<div class="services-content">
+The theme uses a flexible template builder that enables you to create unique pages. <div class="push" style='height:5px'></div> <a href="#">Read More</a> <span class='icon shortcode  theme-angle-right' style='font-size:8px !important;color:#000000;'></span>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-5  unextended animation-from-right animated-active" style="padding-top:0px;padding-bottom:0px" id="wpv-column-3f67290ff52b82e0eda647168b3177b0"><div class="services clearfix smallimage no-image has-icon has-button " style="text-align:left;">
+<div class="services-inside">
+<div class="shrinking-outer clearfix">
+<div class="shrinking" style="background:#FFF8F3 no-repeat 50% 50%;">
+<a href="#" title="">
+<span class='icon shortcode  ' style='color:#898989;'>&#57437;</span> </a>
+</div>
+</div>
+<h3 class="services-title">
+<a href="#" title="Drag &amp; Drop Builder">Drag &amp; Drop Builder</a>
+</h3>
+<div class="services-content">
+The theme uses a flexible template builder that enables you to create unique pages. <div class="push" style='height:5px'></div> <a href="#">Read More</a> <span class='icon shortcode  theme-angle-right' style='font-size:8px !important;color:#000000;'></span>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-5  unextended animation-from-right animated-active" style="padding-top:0px;padding-bottom:0px" id="wpv-column-a39855135fb24256582c841ba19e24e2"><div class="services clearfix smallimage no-image has-icon has-button " style="text-align:left;">
+<div class="services-inside">
+<div class="shrinking-outer clearfix">
+<div class="shrinking" style="background:#eb9587 no-repeat 50% 50%;">
+<a href="#" title="">
+<span class='icon shortcode  ' style=''>&#58238;</span> </a>
+</div>
+</div>
+<h3 class="services-title">
+<a href="#" title="Optimised for speed">Optimised for speed</a>
+</h3>
+<div class="services-content">
+The theme uses a flexible template builder that enables you to create unique pages. <div class="push" style='height:5px'></div> <a href="#">Read More</a> <span class='icon shortcode  theme-angle-right' style='font-size:8px !important;color:#000000;'></span>
+</div>
+</div>
+</div>
+</div></div></div></div>
+<div class="wpv-accordion-wrapper"><div class="accordion" data-collapsible="true"><h4 class="tab"><div class="inner">Get the code</div></h4><div class="pane"><div class="inner"><pre class="pre">[column parallax_bg="disabled" parallax_bg_inertia="-0.5" extended="false" extended_padding="1" background_color="transparent" background_image="" background_repeat="no-repeat" background_position="left center" background_size="auto" background_attachment="" vertical_padding_top="0" vertical_padding_bottom="0" more_link="#" more_text="+ View All" class="" title="" title_type="no-divider" animation="none" width="1/1" last="true"]
+
+[column_1 width="1/5" title="undefined" title_type="undefined" animation="from-left" implicit="true"]
+
+[services fullimage="false" icon="theme-tablet" icon_color="" icon_size="16" background="#f2e498" image="" title="Mobile Friendly" text_align="left" button_link="#" button_text=""]
+The theme uses a flexible template builder that enables you to create unique pages. [push h="5"] &lt;a href="#"&gt;Read More&lt;/a&gt; [icon style="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services]
+
+[/column_1]
+
+[column_1 width="1/5" title="undefined" title_type="undefined" animation="from-left" implicit="true"]
+
+[services fullimage="false" icon="cart-checkout" icon_color="" icon_size="16" background="#b6edc8" image="" title="Shop" text_align="left" button_link="#" button_text=""]
+The theme uses a flexible template builder that enables you to create unique pages. [push h="5"] &lt;a href="#"&gt;Read More&lt;/a&gt; [icon style="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services]
+
+[/column_1]
+
+[column_1 width="1/5" title="undefined" title_type="undefined" animation="fade-in" implicit="true"]
+
+[services fullimage="false" icon="theme-brush" icon_color="" icon_size="16" background="#b6d8ed" image="" title="Easy Styling" text_align="left" button_link="#" button_text=""]
+The theme uses a flexible template builder that enables you to create unique pages. [push h="5"] &lt;a href="#"&gt;Read More&lt;/a&gt; [icon style="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services]
+
+[/column_1]
+
+[column_1 width="1/5" title="undefined" title_type="undefined" animation="from-right" implicit="true"]
+
+[services fullimage="false" icon="copy3" icon_color="" icon_size="16" background="#b6baed" image="" title="Drag &amp; Drop Builder" text_align="left" button_link="#" button_text=""]
+The theme uses a flexible template builder that enables you to create unique pages. [push h="5"] &lt;a href="#"&gt;Read More&lt;/a&gt; [icon style="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services]
+
+[/column_1]
+
+[column_1 width="1/5" last="true" title="undefined" title_type="undefined" animation="from-right" implicit="true"]
+
+[services fullimage="false" icon="css3" icon_color="" icon_size="16" background="#eb9587" image="" title="Optimised for speed" text_align="left" button_link="#" button_text=""]
+The theme uses a flexible template builder that enables you to create unique pages. [push h="5"] &lt;a href="#"&gt;Read More&lt;/a&gt; [icon style="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services]
+
+[/column_1]
+
+[/column]</pre></div></div></div></div>
+<div class="push" style='height:30px'></div>
+<div class="sep-text single centered">
+<span class="sep-text-before"><div class="sep-text-line"></div></span>
+<div class="content">
+<h2 class="text-divider-double">
+Services Style 5
+</h2> </div>
+<span class="sep-text-after"><div class="sep-text-line"></div></span>
+</div>
+<div class="row "><div class="wpv-grid grid-1-1  wpv-first-level first extended no-extended-padding" style="padding-top:0px;padding-bottom:0px" id="wpv-column-4e81d27ccb2f6b7da2fe73739001c1e2"><div class="extended-column-inner"><div class="row "><div class="wpv-grid grid-1-3  first has-background unextended animation-from-left animated-active" style="
+				background: url('../../../wp-content/uploads/2013/03/timer_bg1.png') repeat ;
+				background-size: auto;
+				background-attachment: ;
+			background-color:#f3f8f9;padding-top:0px;padding-bottom:20px" id="wpv-column-e2182729837f1c7a2978e1f7acca0d4d"><style scoped>#wpv-column-e2182729837f1c7a2978e1f7acca0d4d p,#wpv-column-e2182729837f1c7a2978e1f7acca0d4d em,#wpv-column-e2182729837f1c7a2978e1f7acca0d4d .column-title,#wpv-column-e2182729837f1c7a2978e1f7acca0d4d .sep-text .regular-title-wrapper,#wpv-column-e2182729837f1c7a2978e1f7acca0d4d .text-divider-double,#wpv-column-e2182729837f1c7a2978e1f7acca0d4d .sep-text .sep-text-line,#wpv-column-e2182729837f1c7a2978e1f7acca0d4d .sep,#wpv-column-e2182729837f1c7a2978e1f7acca0d4d .sep-2,#wpv-column-e2182729837f1c7a2978e1f7acca0d4d .sep-3{color:#4f919e;}</style><div class="push" style='height:90px'></div>
+<p style="text-align: center;"><span class='icon shortcode  ' style='font-size:40px !important;color:#ffffff;'>&#57413;</span>
+<h1 style="text-align: center; color: #ffffff;">/ Bussines.</h1>
+<p style="text-align: center; color: #ffffff;">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p></div>
+<div class="wpv-grid grid-1-3  has-background unextended animation-fade-in animated-active" style="
+				background: url('../../../wp-content/uploads/2013/10/bg4.png') no-repeat center top;
+				background-size: cover;
+				background-attachment: ;
+			padding-top:0px;padding-bottom:20px" id="wpv-column-7fe9ce86e75d71be1c920b76efb9752b"><div class="push" style='height:90px'></div>
+<p style="text-align: center;"><span class='icon shortcode  ' style='font-size:40px !important;color:#ffffff;'>&#57413;</span>
+<h1 style="text-align: center; color: #ffffff;">/ Bussines.</h1>
+<p style="text-align: center; color: #ffffff;">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p></div>
+<div class="wpv-grid grid-1-3  has-background unextended animation-from-right animated-active" style="background-color:#cae0e6;padding-top:0px;padding-bottom:20px" id="wpv-column-5a44eeb679d6fcac8524157784c89e5b"><style scoped>#wpv-column-5a44eeb679d6fcac8524157784c89e5b p,#wpv-column-5a44eeb679d6fcac8524157784c89e5b em,#wpv-column-5a44eeb679d6fcac8524157784c89e5b .column-title,#wpv-column-5a44eeb679d6fcac8524157784c89e5b .sep-text .regular-title-wrapper,#wpv-column-5a44eeb679d6fcac8524157784c89e5b .text-divider-double,#wpv-column-5a44eeb679d6fcac8524157784c89e5b .sep-text .sep-text-line,#wpv-column-5a44eeb679d6fcac8524157784c89e5b .sep,#wpv-column-5a44eeb679d6fcac8524157784c89e5b .sep-2,#wpv-column-5a44eeb679d6fcac8524157784c89e5b .sep-3{color:#396b78;}</style><div class="push" style='height:90px'></div>
+<p style="text-align: center;"><span class='icon shortcode  ' style='font-size:40px !important;color:#ffffff;'>&#57413;</span>
+<h1 style="text-align: center; color: #ffffff;">/ Bussines.</h1>
+<p style="text-align: center; color: #ffffff;">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p></div></div></div></div></div>
+<div class="wpv-accordion-wrapper"><div class="accordion" data-collapsible="true"><h4 class="tab"><div class="inner">Get the code</div></h4><div class="pane"><div class="inner"><pre class="pre">[column parallax_bg="disabled" parallax_bg_inertia="-0.5" extended="true" extended_padding="false" background_color="" background_image="" background_repeat="" background_position="" background_size="auto" background_attachment="" vertical_padding_top="0" vertical_padding_bottom="0" more_link="" more_text="" class="" title="" title_type="single" animation="none" width="1/1" last="true"]
+
+[column_1 parallax_bg="disabled" parallax_bg_inertia="-0.5" extended="false" extended_padding="true" background_color="#f3f8f9" background_image="" background_repeat="" background_position="" background_size="auto" background_attachment="" vertical_padding_top="0" vertical_padding_bottom="20" more_link="" more_text="" class="" title="" title_type="single" animation="from-left" width="1/3"]
+
+&lt;a name="Slide"&gt;&lt;/a&gt;[push h="85"]
+&lt;p style="padding-left: 30px;"&gt;&lt;img class="alignnone size-full wp-image-6173" alt="icon-1" src="https://the-wedding-day.vamtam.com/wp-content/uploads/2013/09/man3.png" width="53" height="61" /&gt;&lt;/p&gt;
+[push h="10"]
+&lt;h1 style="padding-left: 30px;"&gt;/ Progress.&lt;/h1&gt;
+&lt;p style="padding-left: 30px;"&gt;Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.&lt;/p&gt;
+&lt;p style="padding-left: 30px;"&gt;&lt;a href="#"&gt;Read more →&lt;/a&gt;&lt;/p&gt;
+[/column_1]
+
+[column_1 parallax_bg="disabled" parallax_bg_inertia="-0.5" extended="false" extended_padding="true" background_color="" background_image="https://the-wedding-day.vamtam.com/wp-content/uploads/2013/08/bg1.jpg" background_repeat="no-repeat" background_position="center top" background_size="cover" background_attachment="" vertical_padding_top="0" vertical_padding_bottom="20" more_link="" more_text="" class="" title="" title_type="single" animation="fade-in" width="1/3"]
+
+[push h="190"]
+&lt;p style="text-align: center;"&gt;[icon name="mic1" style="" color="#ffffff" size="40" ]&lt;/p&gt;
+
+&lt;h1 style="text-align: center; color: #ffffff;"&gt;/ Bussines.&lt;/h1&gt;
+&lt;p style="text-align: center; color: #ffffff;"&gt;Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.&lt;/p&gt;
+[/column_1]
+
+[column_1 parallax_bg="disabled" parallax_bg_inertia="-0.5" extended="false" extended_padding="true" background_color="#cae0e6" background_image="" background_repeat="" background_position="" background_size="auto" background_attachment="" vertical_padding_top="0" vertical_padding_bottom="20" more_link="" more_text="" class="" title="" title_type="single" animation="from-right" width="1/3" last="true"]
+
+[push h="90"]
+&lt;p style="padding-left: 30px;"&gt;&lt;img class="alignnone size-full wp-image-6174" alt="icon-2" src="https://the-wedding-day.vamtam.com/wp-content/uploads/2013/09/man3.png" width="98" height="68" /&gt;&lt;/p&gt;
+[push h="10"]
+&lt;h1 style="padding-left: 30px;"&gt;/ Cloud.&lt;/h1&gt;
+&lt;p style="padding-left: 30px;"&gt;Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.&lt;/p&gt;
+&lt;p style="padding-left: 30px;"&gt;&lt;a href="#"&gt;Read more →&lt;/a&gt;&lt;/p&gt;
+[/column_1]
+
+[/column]</pre></div></div></div></div>
+<div class="push" style='height:30px'></div>
+<div class="sep-text single centered">
+<span class="sep-text-before"><div class="sep-text-line"></div></span>
+<div class="content">
+<h2 class="text-divider-double">
+Services Style 6
+</h2> </div>
+<span class="sep-text-after"><div class="sep-text-line"></div></span>
+</div>
+<div class="row "><div class="wpv-grid grid-1-4  wpv-first-level first unextended animation-from-left animated-active" style="padding-top:0px;padding-bottom:0px" id="wpv-column-77c82cb61d9ea44cf2fe1591929b9bf0"><div class="services clearfix fullimage no-image has-icon no-button " style="text-align:center;">
+<div class="services-inside">
+<div class="thumbnail">
+<span class='icon shortcode  ' style='font-size:60px !important;color:#D8D0BF;'>&#57584;</span>
+</div>
+<h3 class="services-title">
+Timely Support </h3>
+<div class="services-content">
+<div class="push" style='height:10px'></div>
+<p>The theme uses a flexible template builder that enables you to create unique pages.</p>
+<p><a href="#">Read more →</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended animation-from-left animated-active" style="padding-top:0px;padding-bottom:0px" id="wpv-column-d900f6542620886dea71bfcaa4f0f208"><div class="services clearfix fullimage no-image has-icon no-button " style="text-align:center;">
+<div class="services-inside">
+<div class="thumbnail">
+<span class='icon shortcode  ' style='font-size:60px !important;color:#D8D0BF;'>&#57367;</span>
+</div>
+<h3 class="services-title">
+Unlimited Styles </h3>
+<div class="services-content">
+<div class="push" style='height:10px'></div>
+<p>The theme uses a flexible template builder that enables you to create unique pages.</p>
+<p><a href="#">Read more →</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended animation-from-right animated-active" style="padding-top:0px;padding-bottom:0px" id="wpv-column-75687554c2caa434c3d4094c248ade47"><div class="services clearfix fullimage no-image has-icon no-button " style="text-align:center;">
+<div class="services-inside">
+<div class="thumbnail">
+<span class='icon shortcode  ' style='font-size:60px !important;color:#D8D0BF;'>&#57669;</span>
+</div>
+<h3 class="services-title">
+Auto Install </h3>
+<div class="services-content">
+<div class="push" style='height:10px'></div>
+<p>The theme uses a flexible template builder that enables you to create unique pages.</p>
+<p><a href="#">Read more →</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended animation-from-right animated-active" style="padding-top:0px;padding-bottom:0px" id="wpv-column-afac171b4538be78056746673de0d042"><div class="services clearfix fullimage no-image has-icon no-button " style="text-align:center;">
+<div class="services-inside">
+<div class="thumbnail">
+<span class='icon shortcode  ' style='font-size:60px !important;color:#D8D0BF;'>&#58091;</span>
+</div>
+<h3 class="services-title">
+Drag &amp; Drop Builder </h3>
+<div class="services-content">
+<div class="push" style='height:10px'></div>
+<p>The theme uses a flexible template builder that enables you to create unique pages.</p>
+<p><a href="#">Read more →</a></p>
+</div>
+</div>
+</div>
+</div></div>
+<div class="wpv-accordion-wrapper"><div class="accordion" data-collapsible="true"><h4 class="tab"><div class="inner">Get the code</div></h4><div class="pane"><div class="inner"><pre class="pre">[column width="1/4" title="undefined" title_type="undefined" animation="from-left" implicit="true"]
+
+[services fullimage="true" icon="bubbles5" icon_color="accent5" icon_size="60" background="transparent" image="" title="Timely Support" text_align="center" button_link="" button_text=""]
+[push h="10"]
+
+The theme uses a flexible template builder that enables you to create unique pages.
+
+&lt;a href="#"&gt;Read more →&lt;/a&gt;
+
+[/services]
+
+[/column]
+
+[column width="1/4" title="undefined" title_type="undefined" animation="from-left" implicit="true"]
+
+[services fullimage="true" icon="paint-format" icon_color="accent5" icon_size="60" background="transparent" image="" title="Unlimited Styles" text_align="center" button_link="" button_text=""]
+[push h="10"]
+
+The theme uses a flexible template builder that enables you to create unique pages.
+
+&lt;a href="#"&gt;Read more →&lt;/a&gt;
+
+[/services]
+
+[/column]
+
+[column width="1/4" title="undefined" title_type="undefined" animation="from-right" implicit="true"]
+
+[services fullimage="true" icon="cogs" icon_color="accent5" icon_size="60" background="transparent" image="" title="Auto Install" text_align="center" button_link="" button_text=""]
+[push h="10"]
+
+The theme uses a flexible template builder that enables you to create unique pages.
+
+&lt;a href="#"&gt;Read more →&lt;/a&gt;
+
+[/services]
+
+[/column]
+
+[column width="1/4" last="true" title="undefined" title_type="undefined" animation="from-right" implicit="true"]
+
+[services fullimage="true" icon="crop" icon_color="accent5" icon_size="60" background="transparent" image="" title="Drag &amp; Drop Builder" text_align="center" button_link="" button_text=""]
+[push h="10"]
+
+The theme uses a flexible template builder that enables you to create unique pages.
+
+&lt;a href="#"&gt;Read more →&lt;/a&gt;
+
+[/services]
+
+[/column]</pre></div></div></div></div>
+<div class="push" style='height:30px'></div>
+<div class="sep-text single centered">
+<span class="sep-text-before"><div class="sep-text-line"></div></span>
+<div class="content">
+<h2 class="text-divider-double">
+Services Style 7
+</h2> </div>
+<span class="sep-text-after"><div class="sep-text-line"></div></span>
+</div>
+<div class="row "><div class="wpv-grid grid-1-4  wpv-first-level first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-3b03207ae272574aab5d7dc7dde98e63">
+<div data-href="#" tabindex="1" data-target="_self" class="linkarea clearfix accent7  background-accent8">
+<div class="last"><div class="row "><div class="wpv-grid grid-1-4  first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-43ffc654af0980c81345d107d1bfc25d"><span class='icon shortcode  ' style='font-size:48px !important;color:#000000;'>&#58228;</span></div>
+<div class="wpv-grid grid-3-4  unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-70f52f1fd0b52daff7a1226dd79c1fbf"><h5>DOWNLOAD</h5>
+<h2>CATALOGUE</h2></div></div></div>
+</div></div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-fcbbabcadbb9b526056e9fd4c47df08d">
+<div data-href="https://vamtam.com" tabindex="1" title="https://vamtam.com" data-target="_blank" class="linkarea clearfix accent7  background-accent8">
+<div class="last"><div class="row "><div class="wpv-grid grid-1-4  first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-2ceda8578c63b966491f09cbe2ece454"><span class='icon shortcode  ' style='font-size:48px !important;color:#000000;'>&#57814;</span></div>
+<div class="wpv-grid grid-3-4  unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-9cc12262ae3d94fadf863d7b2155b34a">DOWNLOAD</p>
+<h2>OUR CATALOGUE</h2></div></div></div>
+</div></div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-e3ea7c5aa1bdb2a10b9fe67923be024a">
+<div data-href="https://vamtam.com" tabindex="1" title="https://vamtam.com" data-target="_blank" class="linkarea clearfix accent7  background-accent8">
+<div class="last"><div class="row "><div class="wpv-grid grid-1-4  first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-3950d7b0034cac6acad711951fe05b73"><span class='icon shortcode  ' style='font-size:48px !important;color:#000000;'>&#57552;</span></div>
+<div class="wpv-grid grid-3-4  unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-c73dd13e613c0bedf9d7ba9a9e9ec946">DOWNLOAD</p>
+<h2>OUR CATALOGUE</h2></div></div></div>
+</div></div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-2ba71cb217d0026c0a6f46095e0874fb">
+<div data-href="https://vamtam.com" tabindex="1" title="https://vamtam.com" data-target="_blank" class="linkarea clearfix   background-accent1">
+<div class="last"><h2 style="text-align: center;"><strong>GET A QUOTE</strong></h2>
+<h5 style="text-align: center;">We will get in touch at your earliest convineance</h5></div>
+</div></div></div>
+<div class="wpv-accordion-wrapper"><div class="accordion" data-collapsible="true"><h4 class="tab"><div class="inner">Get the code</div></h4><div class="pane"><div class="inner"><pre class="pre">[column width="1/4" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="accent8" hover_color="accent7" href="#" target="_self" icon="" icon_color="accent6" icon_size="62" image=""]
+[column_1 width="1/4" title="" implicit="true"]
+
+[icon name="file-pdf" color="accent2" size="48" inverted_colors="false"]
+
+[/column_1]
+
+[column_1 width="3/4" title="" last="true" implicit="true"]
+&lt;h5&gt;DOWNLOAD&lt;/h5&gt;
+&lt;h3&gt;CATALOGUE&lt;/h3&gt;
+[/column_1]
+
+[/linkarea]
+
+[/column]
+
+[column width="1/4" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="accent8" hover_color="accent7" href="https://vamtam.com" target="_blank" icon="" icon_color="accent6" icon_size="62" image=""]
+[column_1 width="1/4" title="" implicit="true"]
+[icon name="download4" color="accent2" size="48" inverted_colors="false"]
+[/column_1]
+[column_1 width="3/4" title="" last="true" implicit="true"] DOWNLOAD
+&lt;h3&gt;OUR CATALOGUE&lt;/h3&gt;
+[/column_1]
+
+[/linkarea]
+
+[/column]
+
+[column width="1/4" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="accent8" hover_color="accent7" href="https://vamtam.com" target="_blank" icon="" icon_color="accent6" icon_size="62" image=""]
+[column_1 width="1/4" title="" implicit="true"]
+[icon name="download" color="accent2" size="48" inverted_colors="false"]
+[/column_1]
+[column_1 width="3/4" title="" last="true" implicit="true"] DOWNLOAD
+&lt;h3&gt;OUR CATALOGUE&lt;/h3&gt;
+[/column_1]
+
+[/linkarea]
+
+[/column]
+
+[column width="1/4" last="true" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="accent1" hover_color="" href="https://vamtam.com" target="_blank" icon="" icon_color="accent6" icon_size="62" image=""]
+&lt;h2 style="text-align: center;"&gt;&lt;strong&gt;GET A QUOTE&lt;/strong&gt;&lt;/h2&gt;
+&lt;h5 style="text-align: center;"&gt;We will get in touch at your earliest convineance&lt;/h5&gt;
+[/linkarea]
+
+[/column]</pre></div></div></div></div>
+<div class="push" style='height:30px'></div>
+<div class="sep-text single centered">
+<span class="sep-text-before"><div class="sep-text-line"></div></span>
+<div class="content">
+<h2 class="text-divider-double">
+Services Style 8
+</h2> </div>
+<span class="sep-text-after"><div class="sep-text-line"></div></span>
+</div>
+<div class="row "><div class="wpv-grid grid-1-1  wpv-first-level first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-dc6b08369aeca11704edf71a78962258"><div class="wpv-tabs vertical" id="tabs-1"><ul class="ui-tabs-nav"><li class="inactive-block-title"><h2>Features</h2></li><li><a href="#tabs-10">Built for and by nerds</a></li><li><a href="#tabs-11">Max-width 1360px</a></li><li><a href="#tabs-12">Cross-everything</a></li><li><a href="#tabs-13">Responsive design</a></li></ul><div class="pane ui-tabs-hide" id="tabs-10"><div class="row "><div class="wpv-grid grid-1-2  first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-60214bff8b418d43d01d96eae68f4f27"><h1>Online Shop</h1>
+<p>This is Photoshop&#8217;s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.<br />
+Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+<p><strong>Duis</strong> sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
+<div class="push" style='height:15px'></div><a href="shop.html" target="_self" style='font-size: 12px;' class="vamtam-button accent1  "><span class='icon shortcode  ' style='color:#F1F1F1;'>&#57474;</span><span class="btext">View it!</span></a></div>
+<div class="wpv-grid grid-1-2  unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-96a19f7a3d0db51e47866fd42d7363d8"><p><img loading="lazy" class="aligncenter size-full wp-image-6606" alt="photo5" src="../../../wp-content/uploads/2013/03/photo5.png" width="284" height="323" srcset="https://the-wedding-day.vamtam.com/wp-content/uploads/2013/03/photo5.png 284w, https://the-wedding-day.vamtam.com/wp-content/uploads/2013/03/photo5-247x281.png 247w" sizes="(max-width: 284px) 100vw, 284px" /></p></div></div>
+<div class="push" style='margin-bottom:-30px'></div></div><div class="pane ui-tabs-hide" id="tabs-11"><div class="row "><div class="wpv-grid grid-1-2  first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-60d184fc78bbd612db7c13b686c93b2b"><h1>3 max resolutions</h1>
+<p>This is Photoshop&#8217;s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.<br />
+Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.<br />
+<div class="push" style='height:15px'></div><a href="#" target="_self" style='font-size: 12px;' class="vamtam-button accent2  "><span class='icon shortcode  ' style='color:#F07677;'>&#58038;</span><span class="btext">Read more</span></a></div>
+<div class="wpv-grid grid-1-2  unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-f51229edadd1cd7a565871e48fc683f5"><p><img loading="lazy" class="aligncenter size-full wp-image-6605" alt="photo1" src="../../../wp-content/uploads/2013/03/photo1.png" width="285" height="313" srcset="https://the-wedding-day.vamtam.com/wp-content/uploads/2013/03/photo1.png 285w, https://the-wedding-day.vamtam.com/wp-content/uploads/2013/03/photo1-247x271.png 247w" sizes="(max-width: 285px) 100vw, 285px" /></p></div></div>
+<div class="push" style='margin-bottom:-40px'></div></div><div class="pane ui-tabs-hide" id="tabs-12"><div class="row "><div class="wpv-grid grid-1-2  first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-e3fe0aa60a8704413a13be4709645aa0"><h1>Optimisation title?</h1>
+<p>This is Photoshop&#8217;s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.<br />
+Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.<br />
+<div class="push" style='height:15px'></div><a href="#" target="_self" style='font-size: 12px;' class="vamtam-button accent2  "><span class='icon shortcode  ' style='color:#F07677;'>&#57805;</span><span class="btext">Read more</span></a></div>
+<div class="wpv-grid grid-1-2  unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-09a2f429b30ac2130694c535232ea5fd"><div class="push"></div><img loading="lazy" class="aligncenter size-full wp-image-6725" alt="girl1" src="../../../wp-content/uploads/2013/09/girl1.png" width="283" height="313" srcset="https://the-wedding-day.vamtam.com/wp-content/uploads/2013/09/girl1.png 283w, https://the-wedding-day.vamtam.com/wp-content/uploads/2013/09/girl1-247x273.png 247w" sizes="(max-width: 283px) 100vw, 283px" /></p></div></div>
+<div class="push" style='margin-bottom:-43px'></div></div><div class="pane ui-tabs-hide" id="tabs-13"><div class="row "><div class="wpv-grid grid-1-2  first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-231daed9e3a85b6c2e9860113cd136b2"><p><img loading="lazy" class="aligncenter size-full wp-image-6734" alt="man1" src="../../../wp-content/uploads/2013/09/man1.png" width="279" height="299" srcset="https://the-wedding-day.vamtam.com/wp-content/uploads/2013/09/man1.png 279w, https://the-wedding-day.vamtam.com/wp-content/uploads/2013/09/man1-247x265.png 247w" sizes="(max-width: 279px) 100vw, 279px" /></p></div>
+<div class="wpv-grid grid-1-2  unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-3a0856e4d5fffc3fd8a5b0489946aea4"><h1>All in hand</h1>
+<p>This is Photoshop&#8217;s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.<br />
+Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.<br />
+<div class="push" style='height:15px'></div><a href="#" target="_self" style='font-size: 12px;' class="vamtam-button accent2  "><span class='icon shortcode  ' style='color:#F07677;'>&#57541;</span><span class="btext">Read more</span></a></div></div>
+<div class="push" style='margin-bottom:-45px'></div></div><style scoped>#tabs-1.vertical,#tabs-1.vertical:before{background:#fff8f3;}#tabs-1.vertical .ui-tabs-nav,#tabs-1.vertical .ui-tabs-nav:before,#tabs-1.vertical .ui-tabs-nav li{background:#f1f1f1;}#tabs-1.vertical .ui-tabs-nav .ui-state-active,#tabs-1.vertical .ui-tabs-nav .ui-state-selected,#tabs-1.vertical .ui-tabs-nav .ui-state-hover{background:#fff8f3;}#tabs-1.vertical .pane:before{background:#f1f1f1;}</style></div></div></div>
+<div class="wpv-accordion-wrapper"><div class="accordion" data-collapsible="true"><h4 class="tab"><div class="inner">Get the code</div></h4><div class="pane"><div class="inner"><pre class="pre">[column width="1/1" last="true" title="Features" title_type="single" animation="none" implicit="true"]
+
+[tabs layout="vertical" left_color="accent8" right_color="accent1"]
+&lt;h1&gt;Online Shop&lt;/h1&gt;
+This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+
+&lt;strong&gt;Duis&lt;/strong&gt; sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+
+[push h="15"][button id="" class="" align="" link="shop" linkTarget="_self" bgColor="accent2" font="12" icon="cart2" icon_placement="left" icon_color="accent1"]View it![/button]
+[tab title="Built for and by nerds"]
+[column_1 width="1/2" title="" title_type="single" animation="none" implicit="true"]
+&lt;h1&gt;Online Shop&lt;/h1&gt;
+This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+
+&lt;strong&gt;Duis&lt;/strong&gt; sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+
+[push h="15"][button id="" class="" align="" link="shop" linkTarget="_self" bgColor="accent2" font="12" icon="cart2" icon_placement="left" icon_color="accent1"]View it![/button]
+
+[/column_1]
+
+[column_1 width="1/2" last="true" title="" title_type="single" animation="none" implicit="true"]
+&lt;p style="text-align: right;"&gt;&lt;img class="alt= alignright" alt="" src="https://the-wedding-day.vamtam.com/wp-content/uploads/2013/09/man3.png" width="379" height="372" /&gt;&lt;/p&gt;
+[/column_1]
+
+[blank h="-30"]
+
+[/blank]
+[/tab]
+
+[tab title="Max-width 1360px"]
+[column_1 width="1/2" title="" title_type="single" animation="none" implicit="true"]
+&lt;h1&gt;3 max resolutions&lt;/h1&gt;
+This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+[push h="15"][button id="" class="" align="" link="#" linkTarget="_self" bgColor="accent2" font="12" icon="arrow" icon_placement="left" icon_color="accent1"]Read more[/button]
+
+[/column_1]
+
+[column_1 width="1/2" last="true" title="" title_type="single" animation="none" implicit="true"]
+
+[push h="87"]
+&lt;p style="text-align: right;"&gt;&lt;img class="size-full wp-image-2685" alt="slider-photo4.1" src="https://the-wedding-day.vamtam.com/wp-content/uploads/2013/09/man3.png" width="529" height="356" /&gt;&lt;/p&gt;
+[/column_1]
+
+[blank h="-40"]
+
+[/blank]
+[/tab]
+
+[tab title="Cross-everything"]
+[column_1 width="1/2" title="" title_type="single" animation="none" implicit="true"]
+&lt;h1&gt;Optimisation title?&lt;/h1&gt;
+This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+[push h="15"][button id="" class="" align="" link="#" linkTarget="_self" bgColor="accent2" font="12" icon="cloud" icon_placement="left" icon_color="accent1"]Read more[/button]
+
+[/column_1]
+
+[column_1 width="1/2" last="true" title="" title_type="single" animation="none" implicit="true"]
+
+[push h=5"]&lt;img class="alignleft size-full wp-image-198" alt="" src="https://the-wedding-day.vamtam.com/wp-content/uploads/2013/09/man3.png" width="480" height="390" /&gt;
+
+[/column_1]
+
+[blank h="-43"]
+
+[/blank]
+[/tab]
+
+[tab title="Responsive design"]
+[column_1 width="1/2" title="" title_type="single" animation="none" implicit="true"]
+
+&lt;img class="size-full wp-image-3469 alignleft" alt="iphone-open" src="https://the-wedding-day.vamtam.com/wp-content/uploads/2013/09/man3.png" width="208" height="410" /&gt;
+
+[/column_1]
+
+[column_1 width="1/2" last="true" title="" title_type="single" animation="none" implicit="true"]
+&lt;h1&gt;All in hand&lt;/h1&gt;
+This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+[push h="15"][button id="" class="" align="" link="#" linkTarget="_self" bgColor="accent2" font="12" icon="mobile" icon_placement="left" icon_color="accent1"]Read more[/button]
+
+[/column_1]
+
+[blank h="-45"]
+
+[/blank]
+[/tab]
+[/tabs]
+
+[/column]</pre></div></div></div></div>
+<div class="push" style='height:30px'></div>
+<div class="sep-text single centered">
+<span class="sep-text-before"><div class="sep-text-line"></div></span>
+<div class="content">
+<h2 class="text-divider-double">
+Services Style 9
+</h2> </div>
+<span class="sep-text-after"><div class="sep-text-line"></div></span>
+</div>
+<div class="row "><div class="wpv-grid grid-1-4  wpv-first-level first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-ba6802e0dec2481f45035a27cd05eb38">
+<div data-href="https://vamtam.com" tabindex="1" title="https://vamtam.com" data-target="_blank" class="linkarea clearfix accent8  background-transparent">
+<div class="last"><h5><span class='icon shortcode  ' style='font-size:28px !important;color:#000000;'>&#58238;</span>  TIMELY <strong>SUPPORT</strong></h5>
+<p>The theme uses a<strong> flexible template builder that enables</strong> you to create unique pages.<br />
+<ul class="styled-list  icon-accent2">
+<li class=" icon-b " data-icon="&#58011;">We understand you</li>
+<li class=" icon-b " data-icon="&#58011;">We know what is hight quality web</li>
+<li class=" icon-b " data-icon="&#58011;">Tests and Optimization</li>
+<li class=" icon-b " data-icon="&#58011;">You have an important role in the project</li>
+<li class=" icon-b " data-icon="&#58011;">Search Engine Optimization</li>
+<li class=" icon-b " data-icon="&#58011;">You have an important role in the project</li>
+<li class=" icon-b " data-icon="&#58011;">Search Engine Optimization</li>
+</ul>
+</div>
+</div></div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-d04843934abb8a977ecfe46ca745a0a6">
+<div data-href="https://vamtam.com" tabindex="1" title="https://vamtam.com" data-target="_blank" class="linkarea clearfix accent8  background-transparent">
+<div class="last"><h5><span class='icon shortcode  ' style='font-size:28px !important;color:#000000;'>&#58238;</span>  TIMELY <strong>SUPPORT</strong></h5>
+<p>The theme uses a<strong> flexible template builder that enables</strong> you to create unique pages.<br />
+<ul class="styled-list  icon-accent2">
+<li class=" icon-b " data-icon="&#58011;">We understand you</li>
+<li class=" icon-b " data-icon="&#58011;">We know what is hight quality web</li>
+<li class=" icon-b " data-icon="&#58011;">Tests and Optimization</li>
+<li class=" icon-b " data-icon="&#58011;">You have an important role in the project</li>
+<li class=" icon-b " data-icon="&#58011;">Search Engine Optimization</li>
+<li class=" icon-b " data-icon="&#58011;">You have an important role in the project</li>
+<li class=" icon-b " data-icon="&#58011;">Search Engine Optimization</li>
+</ul>
+</div>
+</div></div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-efac272229d1abd2630c51da21918e46">
+<div data-href="https://vamtam.com" tabindex="1" title="https://vamtam.com" data-target="_blank" class="linkarea clearfix accent8  background-transparent">
+<div class="last"><h5><span class='icon shortcode  ' style='font-size:28px !important;color:#000000;'>&#58238;</span>  TIMELY <strong>SUPPORT</strong></h5>
+<p>The theme uses a<strong> flexible template builder that enables</strong> you to create unique pages.<br />
+<ul class="styled-list  icon-accent2">
+<li class=" icon-b " data-icon="&#58011;">We understand you</li>
+<li class=" icon-b " data-icon="&#58011;">We know what is hight quality web</li>
+<li class=" icon-b " data-icon="&#58011;">Tests and Optimization</li>
+<li class=" icon-b " data-icon="&#58011;">You have an important role in the project</li>
+<li class=" icon-b " data-icon="&#58011;">Search Engine Optimization</li>
+<li class=" icon-b " data-icon="&#58011;">You have an important role in the project</li>
+<li class=" icon-b " data-icon="&#58011;">Search Engine Optimization</li>
+</ul>
+</div>
+</div></div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-23e20db7b4bed1c4e38381bdc4a3dbcd">
+<div data-href="https://vamtam.com" tabindex="1" title="https://vamtam.com" data-target="_blank" class="linkarea clearfix accent8  background-transparent">
+<div class="last"><h5><span class='icon shortcode  ' style='font-size:28px !important;color:#000000;'>&#58238;</span>  TIMELY <strong>SUPPORT</strong></h5>
+<p>The theme uses a<strong> flexible template builder that enables</strong> you to create unique pages.<br />
+<ul class="styled-list  icon-accent2">
+<li class=" icon-b " data-icon="&#58011;">We understand you</li>
+<li class=" icon-b " data-icon="&#58011;">We know what is hight quality web</li>
+<li class=" icon-b " data-icon="&#58011;">Tests and Optimization</li>
+<li class=" icon-b " data-icon="&#58011;">You have an important role in the project</li>
+<li class=" icon-b " data-icon="&#58011;">Search Engine Optimization</li>
+<li class=" icon-b " data-icon="&#58011;">You have an important role in the project</li>
+<li class=" icon-b " data-icon="&#58011;">Search Engine Optimization</li>
+</ul>
+</div>
+</div></div></div>
+<div class="wpv-accordion-wrapper"><div class="accordion" data-collapsible="true"><h4 class="tab"><div class="inner">Get the code</div></h4><div class="pane"><div class="inner"><pre class="pre">[column width="1/4" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="" hover_color="accent8" href="https://vamtam.com" target="_blank" icon="" icon_color="accent6" icon_size="62" image=""]
+&lt;h5&gt;[icon name="css3" color="accent2" size="28" inverted_colors="false"]  TIMELY &lt;strong&gt;SUPPORT&lt;/strong&gt;&lt;/h5&gt;
+The theme uses a&lt;strong&gt; flexible template builder that enables&lt;/strong&gt; you to create unique pages.
+[list style="arrow-right2" color="accent2"]
+&lt;ul&gt;
+	&lt;li&gt;We understand you&lt;/li&gt;
+	&lt;li&gt;We know what is hight quality web&lt;/li&gt;
+	&lt;li&gt;Tests and Optimization&lt;/li&gt;
+	&lt;li&gt;You have an important role in the project&lt;/li&gt;
+	&lt;li&gt;Search Engine Optimization&lt;/li&gt;
+	&lt;li&gt;You have an important role in the project&lt;/li&gt;
+	&lt;li&gt;Search Engine Optimization&lt;/li&gt;
+&lt;/ul&gt;
+[/list]
+
+[/linkarea]
+
+[/column]
+
+[column width="1/4" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="" hover_color="accent8" href="https://vamtam.com" target="_blank" icon="" icon_color="accent6" icon_size="62" image=""]
+&lt;h5&gt;[icon name="css3" color="accent2" size="28" inverted_colors="false"]  TIMELY &lt;strong&gt;SUPPORT&lt;/strong&gt;&lt;/h5&gt;
+The theme uses a&lt;strong&gt; flexible template builder that enables&lt;/strong&gt; you to create unique pages.
+[list style="arrow-right2" color="accent2"]
+&lt;ul&gt;
+	&lt;li&gt;We understand you&lt;/li&gt;
+	&lt;li&gt;We know what is hight quality web&lt;/li&gt;
+	&lt;li&gt;Tests and Optimization&lt;/li&gt;
+	&lt;li&gt;You have an important role in the project&lt;/li&gt;
+	&lt;li&gt;Search Engine Optimization&lt;/li&gt;
+	&lt;li&gt;You have an important role in the project&lt;/li&gt;
+	&lt;li&gt;Search Engine Optimization&lt;/li&gt;
+&lt;/ul&gt;
+[/list]
+
+[/linkarea]
+
+[/column]
+
+[column width="1/4" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="" hover_color="accent8" href="https://vamtam.com" target="_blank" icon="" icon_color="accent6" icon_size="62" image=""]
+&lt;h5&gt;[icon name="css3" color="accent2" size="28" inverted_colors="false"]  TIMELY &lt;strong&gt;SUPPORT&lt;/strong&gt;&lt;/h5&gt;
+The theme uses a&lt;strong&gt; flexible template builder that enables&lt;/strong&gt; you to create unique pages.
+[list style="arrow-right2" color="accent2"]
+&lt;ul&gt;
+	&lt;li&gt;We understand you&lt;/li&gt;
+	&lt;li&gt;We know what is hight quality web&lt;/li&gt;
+	&lt;li&gt;Tests and Optimization&lt;/li&gt;
+	&lt;li&gt;You have an important role in the project&lt;/li&gt;
+	&lt;li&gt;Search Engine Optimization&lt;/li&gt;
+	&lt;li&gt;You have an important role in the project&lt;/li&gt;
+	&lt;li&gt;Search Engine Optimization&lt;/li&gt;
+&lt;/ul&gt;
+[/list]
+
+[/linkarea]
+
+[/column]
+
+[column width="1/4" last="true" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="" hover_color="accent8" href="https://vamtam.com" target="_blank" icon="" icon_color="accent6" icon_size="62" image=""]
+&lt;h5&gt;[icon name="css3" color="accent2" size="28" inverted_colors="false"]  TIMELY &lt;strong&gt;SUPPORT&lt;/strong&gt;&lt;/h5&gt;
+The theme uses a&lt;strong&gt; flexible template builder that enables&lt;/strong&gt; you to create unique pages.
+[list style="arrow-right2" color="accent2"]
+&lt;ul&gt;
+	&lt;li&gt;We understand you&lt;/li&gt;
+	&lt;li&gt;We know what is hight quality web&lt;/li&gt;
+	&lt;li&gt;Tests and Optimization&lt;/li&gt;
+	&lt;li&gt;You have an important role in the project&lt;/li&gt;
+	&lt;li&gt;Search Engine Optimization&lt;/li&gt;
+	&lt;li&gt;You have an important role in the project&lt;/li&gt;
+	&lt;li&gt;Search Engine Optimization&lt;/li&gt;
+&lt;/ul&gt;
+[/list]
+
+[/linkarea]
+
+[/column]</pre></div></div></div></div>
+<div class="push" style='height:30px'></div>
+<div class="sep-text single centered">
+<span class="sep-text-before"><div class="sep-text-line"></div></span>
+<div class="content">
+<h2 class="text-divider-double">
+Services Style 10
+</h2> </div>
+<span class="sep-text-after"><div class="sep-text-line"></div></span>
+</div>
+<div class="row "><div class="wpv-grid grid-1-4  wpv-first-level first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-db927d80bf56f110b159c275ec2319c8">
+<div data-href="https://vamtam.com" tabindex="1" title="https://vamtam.com" data-target="_blank" class="linkarea clearfix accent8  background-transparent">
+<div class="last"><h3 style="text-align: center;">Browser Compatibility</h3>
+<div class="push" style='height:20px'></div>
+<p style="text-align: center;"><span class='icon shortcode  ' style='font-size:30px !important;color:#000000;'>&#58238;</span><div class="push" style='height:10px'></div>
+<p style="text-align: center;"><em>We test rigorously on Internet Explorer, Chrome, Firefox. </em></p></div>
+</div></div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-44aeb252d72cad86720307d2af0590b1">
+<div data-href="https://vamtam.com" tabindex="1" title="https://vamtam.com" data-target="_blank" class="linkarea clearfix accent8  background-transparent">
+<div class="last"><h3 style="text-align: center;">Help Desk</h3>
+<div class="push" style='height:20px'></div>
+<p style="text-align: center;"><span class='icon shortcode  ' style='font-size:30px !important;color:#000000;'>&#57611;</span><div class="push" style='height:10px'></div>
+<p style="text-align: center;"><em>Timely Support &#8211; response times usually less than 8 hours.</em></p></div>
+</div></div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-11decea09cc9bf1c8e24222ca31d795c">
+<div data-href="https://vamtam.com" tabindex="1" title="https://vamtam.com" data-target="_blank" class="linkarea clearfix accent8  background-transparent">
+<div class="last"><h3 style="text-align: center;">Help Desk</h3>
+<div class="push" style='height:20px'></div>
+<p style="text-align: center;"><span class='icon shortcode  ' style='font-size:30px !important;color:#000000;'>&#57611;</span><div class="push" style='height:10px'></div>
+<p style="text-align: center;"><em>Timely Support &#8211; response times usually less than 8 hours.</em></p></div>
+</div></div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-83d0a3fb2e4623951179d303698aff8b">
+<div data-href="https://vamtam.com" tabindex="1" title="https://vamtam.com" data-target="_blank" class="linkarea clearfix accent8  background-transparent">
+<div class="last"><h3 style="text-align: center;">Responsive</h3>
+<div class="push" style='height:20px'></div>
+<p style="text-align: center;"><span class='icon shortcode  ' style='font-size:30px !important;color:#000000;'>&#57541;</span><div class="push" style='height:10px'></div>
+<p style="text-align: center;"><em>Support for Ipad Iphone and most android devices</em></p></div>
+</div></div></div>
+<div class="wpv-accordion-wrapper"><div class="accordion" data-collapsible="true"><h4 class="tab"><div class="inner">Get the code</div></h4><div class="pane"><div class="inner"><pre class="pre">[column width="1/4" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="" hover_color="accent8" href="https://vamtam.com" target="_blank" icon="" icon_color="accent6" icon_size="62" image=""]
+&lt;h3 style="text-align: center;"&gt;Browser Compatibility&lt;/h3&gt;
+[push h="20"]
+&lt;p style="text-align: center;"&gt;[icon name="css3" color="accent2" size="30" inverted_colors="false"][push h="10"]&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;em&gt;We test rigorously on Internet Explorer, Chrome, Firefox. &lt;/em&gt;&lt;/p&gt;
+[/linkarea]
+
+[/column]
+
+[column width="1/4" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="" hover_color="accent8" href="https://vamtam.com" target="_blank" icon="" icon_color="accent6" icon_size="62" image=""]
+&lt;h3 style="text-align: center;"&gt;Help Desk&lt;/h3&gt;
+[push h="20"]
+&lt;p style="text-align: center;"&gt;[icon name="users" color="accent2" size="30" inverted_colors="false"][push h="10"]&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;em&gt;Timely Support - response times usually less than 8 hours.&lt;/em&gt;&lt;/p&gt;
+[/linkarea]
+
+[/column]
+
+[column width="1/4" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="" hover_color="accent8" href="https://vamtam.com" target="_blank" icon="" icon_color="accent6" icon_size="62" image=""]
+&lt;h3 style="text-align: center;"&gt;Help Desk&lt;/h3&gt;
+[push h="20"]
+&lt;p style="text-align: center;"&gt;[icon name="users" color="accent2" size="30" inverted_colors="false"][push h="10"]&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;em&gt;Timely Support - response times usually less than 8 hours.&lt;/em&gt;&lt;/p&gt;
+[/linkarea]
+
+[/column]
+
+[column width="1/4" last="true" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="" hover_color="accent8" href="https://vamtam.com" target="_blank" icon="" icon_color="accent6" icon_size="62" image=""]
+&lt;h3 style="text-align: center;"&gt;Responsive&lt;/h3&gt;
+[push h="20"]
+&lt;p style="text-align: center;"&gt;[icon name="mobile" color="accent2" size="30" inverted_colors="false"][push h="10"]&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;em&gt;Support for Ipad Iphone and most android devices&lt;/em&gt;&lt;/p&gt;
+[/linkarea]
+
+[/column]</pre></div></div></div></div>
+<div class="push" style='height:30px'></div>
+<div class="sep-text single centered">
+<span class="sep-text-before"><div class="sep-text-line"></div></span>
+<div class="content">
+<h2 class="text-divider-double">
+Services Style 11
+</h2> </div>
+<span class="sep-text-after"><div class="sep-text-line"></div></span>
+</div>
+<div class="row "><div class="wpv-grid grid-1-3  wpv-first-level first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-7e1fa7fb40369493557aea3ed48c56ec"><style scoped>#wpv-expandable-720cebb23c0ef4c78f9d4f0fa3facdda .closed{background:#000;}#wpv-expandable-720cebb23c0ef4c78f9d4f0fa3facdda .closed,#wpv-expandable-720cebb23c0ef4c78f9d4f0fa3facdda .closed p{color:#808080;}#wpv-expandable-720cebb23c0ef4c78f9d4f0fa3facdda .open{background:#f1f1f1;}#wpv-expandable-720cebb23c0ef4c78f9d4f0fa3facdda .open,#wpv-expandable-720cebb23c0ef4c78f9d4f0fa3facdda .open p{color:#727272;}</style>
+<div class="services has-more " id="wpv-expandable-720cebb23c0ef4c78f9d4f0fa3facdda">
+<div class="closed services-inside">
+<div class="services-content-wrapper clearfix">
+<div class="push" style='height:20px'></div>
+<p style="text-align: center;"><span class='icon shortcode theme ' style='font-size:44px !important;color:#F07677;'>&#57397;</span>
+<div class="push" style='height:20px'></div>
+<p style="text-align: center;"><span style="font-size: 35px;">UNIQUE DESIGNS</span></p>
+<p style="text-align: center;">Never doubt that a small group of committed people can change the world. Indeed, it is the only thing that ever has.</p>
+<div class="push" style='height:20px'></div>
+</div>
+</div>
+<div class="open services-inside">
+<div class="services-content-wrapper">
+<div class="row">
+<h3>Diversity</h3>
+<p>At Vamtam, we believe that in an increasingly multicultural world, we have to expand our efforts to reach and understand the diverse people and cultures we serve.<br />
+<a href="#">Read More</a> <span class='icon shortcode theme ' style='font-size:8px !important;color:#000000;'>&#57349;</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-3  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-113da26e1f35f12de651c167615c588c"><style scoped>#wpv-expandable-812b1df8ae2e256bcc3bc5753b88c37a .closed{background:#000;}#wpv-expandable-812b1df8ae2e256bcc3bc5753b88c37a .closed,#wpv-expandable-812b1df8ae2e256bcc3bc5753b88c37a .closed p{color:#808080;}#wpv-expandable-812b1df8ae2e256bcc3bc5753b88c37a .open{background:#f1f1f1;}#wpv-expandable-812b1df8ae2e256bcc3bc5753b88c37a .open,#wpv-expandable-812b1df8ae2e256bcc3bc5753b88c37a .open p{color:#727272;}</style>
+<div class="services has-more " id="wpv-expandable-812b1df8ae2e256bcc3bc5753b88c37a">
+<div class="closed services-inside">
+<div class="services-content-wrapper clearfix">
+<div class="push" style='height:20px'></div>
+<p style="text-align: center;"><span class='icon shortcode  ' style='font-size:44px !important;color:#F07677;'>&#58238;</span>
+<div class="push" style='height:20px'></div>
+<p style="text-align: center;"><span style="font-size: 35px;">UNLIMITED STYLES</span></p>
+<p style="text-align: center;">Never doubt that a small group of committed people can change the world. Indeed, it is the only thing that ever has.</p>
+<div class="push" style='height:20px'></div>
+</div>
+</div>
+<div class="open services-inside">
+<div class="services-content-wrapper">
+<div class="row">
+<h4>Diversity</h4>
+<p>At Vamtam, we believe that in an increasingly multicultural world, we have to expand our efforts to reach and understand the diverse people and cultures we serve.<br />
+<a href="#">Read More</a> <span class='icon shortcode theme ' style='font-size:8px !important;color:#000000;'>&#57349;</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wpv-grid grid-1-3  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-5617c3c9d01e490942d4ef82b96d1d19"><style scoped>#wpv-expandable-fc34bcc362addacf6559612879edaf60 .closed{background:#000;}#wpv-expandable-fc34bcc362addacf6559612879edaf60 .closed,#wpv-expandable-fc34bcc362addacf6559612879edaf60 .closed p{color:#808080;}#wpv-expandable-fc34bcc362addacf6559612879edaf60 .open{background:#f1f1f1;}#wpv-expandable-fc34bcc362addacf6559612879edaf60 .open,#wpv-expandable-fc34bcc362addacf6559612879edaf60 .open p{color:#727272;}</style>
+<div class="services has-more " id="wpv-expandable-fc34bcc362addacf6559612879edaf60">
+<div class="closed services-inside">
+<div class="services-content-wrapper clearfix">
+<div class="push" style='height:20px'></div>
+<p style="text-align: center;"><span class='icon shortcode  ' style='font-size:44px !important;color:#F07677;'>&#57557;</span>
+<div class="push" style='height:20px'></div>
+<p style="text-align: center;"><span style="font-size: 35px;">TIMELY SUPPORT</span></p>
+<p style="text-align: center;">Never doubt that a small group of committed people can change the world. Indeed, it is the only thing that ever has.</p>
+<div class="push" style='height:20px'></div>
+</div>
+</div>
+<div class="open services-inside">
+<div class="services-content-wrapper">
+<div class="row">
+<h4>Diversity</h4>
+<p>At Vamtam, we believe that in an increasingly multicultural world, we have to expand our efforts to reach and understand the diverse people and cultures we serve.<br />
+<a href="#">Read More</a> <span class='icon shortcode theme ' style='font-size:8px !important;color:#000000;'>&#57349;</span>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<div class="wpv-accordion-wrapper"><div class="accordion" data-collapsible="true"><h4 class="tab"><div class="inner">Get the code</div></h4><div class="pane"><div class="inner"><pre class="pre">[column width="1/3" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[services_expandable background="accent2" hover_background="accent8" image="" icon="" icon_color="accent6" icon_size="62"]
+[push h="20"]
+&lt;p style="text-align: center;"&gt;[icon name="theme-brush" color="accent1" size="44" inverted_colors="false"]
+[push h="20"]&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;span style="font-size: 35px;"&gt;UNIQUE DESIGNS&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;Never doubt that a small group of committed people can change the world. Indeed, it is the only thing that ever has.&lt;/p&gt;
+[push h="20"]
+
+[split]
+&lt;h3&gt;Diversity&lt;/h3&gt;
+At Vamtam, we believe that in an increasingly multicultural world, we have to expand our efforts to reach and understand the diverse people and cultures we serve.
+&lt;a href="#"&gt;Read More&lt;/a&gt; [icon name="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services_expandable]
+
+[/column]
+
+[column width="1/3" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[services_expandable background="accent2" hover_background="accent8" image="" icon="" icon_color="accent6" icon_size="62"]
+
+[push h="20"]
+&lt;p style="text-align: center;"&gt;[icon name="css3" color="accent1" size="44" inverted_colors="false"]
+[push h="20"]&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;span style="font-size: 35px;"&gt;UNLIMITED STYLES&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;Never doubt that a small group of committed people can change the world. Indeed, it is the only thing that ever has.&lt;/p&gt;
+[push h="20"]
+
+[split]
+&lt;h4&gt;Diversity&lt;/h4&gt;
+At Vamtam, we believe that in an increasingly multicultural world, we have to expand our efforts to reach and understand the diverse people and cultures we serve.
+&lt;a href="#"&gt;Read More&lt;/a&gt; [icon name="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services_expandable]
+
+[/column]
+
+[column width="1/3" last="true" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[services_expandable background="accent2" hover_background="accent8" image="" icon="" icon_color="accent6" icon_size="62"]
+
+[push h="20"]
+&lt;p style="text-align: center;"&gt;[icon name="database" color="accent1" size="44" inverted_colors="false"]
+[push h="20"]&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;span style="font-size: 35px;"&gt;TIMELY SUPPORT&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;Never doubt that a small group of committed people can change the world. Indeed, it is the only thing that ever has.&lt;/p&gt;
+[push h="20"]
+
+[split]
+&lt;h4&gt;Diversity&lt;/h4&gt;
+At Vamtam, we believe that in an increasingly multicultural world, we have to expand our efforts to reach and understand the diverse people and cultures we serve.
+&lt;a href="#"&gt;Read More&lt;/a&gt; [icon name="theme-angle-right" color="Accent2" size="8" inverted_colors="false"]
+
+[/services_expandable]
+
+[/column]</pre></div></div></div></div>
+<div class="push" style='height:30px'></div>
+<div class="sep-text single centered">
+<span class="sep-text-before"><div class="sep-text-line"></div></span>
+<div class="content">
+<h2 class="text-divider-double">
+Services Style 12
+</h2> </div>
+<span class="sep-text-after"><div class="sep-text-line"></div></span>
+</div>
+<div class="row "><div class="wpv-grid grid-1-4  wpv-first-level first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-434ce414b56c57dc0cb764f908f88783"><h3>Professional translation</h3>
+<p><strong>Makalu is professionally translated into English, French, German, Italian, Portuguese, Russian and Spanish.</strong></p>
+<p>Full localization support for the languages that have not been translated yet (contains .po/.mo files) All of our themes have been localized for easy translation.</p></div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-ec4c43f98d57a99693c3e1d550929e4e"><h4><span class='icon shortcode  ' style='font-size:28px !important;color:#000000;'>&#57521;</span>  Top notch support</h4>
+<ul class="styled-list  icon-accent2">
+<li class=" icon-b theme" data-icon="&#57351;">Help Desk with dedicated staff.</li>
+<li class=" icon-b theme" data-icon="&#57351;">Response times  8 hours.</li>
+</ul>
+<div class="push" style='height:20px'></div>
+<h4><span class='icon shortcode  ' style='font-size:28px !important;color:#000000;'>&#57668;</span> Theme options</h4>
+<ul class="styled-list  icon-accent2">
+<li class=" icon-b theme" data-icon="&#57351;">Revolutionary and easy .</li>
+<li class=" icon-b theme" data-icon="&#57351;">Revamped Option Panel.</li>
+</ul>
+</div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-234a1938b181876c1f98b6fa515cb599"><h4><span class='icon shortcode  ' style='font-size:28px !important;color:#000000;'>&#57525;</span>  New in Makalu</h4>
+<ul class="styled-list  icon-accent2">
+<li class=" icon-b theme" data-icon="&#57351;">Revolutionary and easy .</li>
+<li class=" icon-b theme" data-icon="&#57351;">Revamped  Option Panel.</li>
+</ul>
+<div class="push" style='height:20px'></div>
+<h4><span class='icon shortcode  ' style='font-size:28px !important;color:#000000;'>&#57762;</span>  Endless layouts</h4>
+<ul class="styled-list  icon-accent2">
+<li class=" icon-b theme" data-icon="&#57351;"><strong>Boxed and full-width layout.</strong></li>
+<li class=" icon-b theme" data-icon="&#57351;">Enable disable responsiveness.</li>
+</ul>
+</div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-908f8e0a386d4578de7c0dcc8b3289b2"><h4><span class='icon shortcode  ' style='font-size:28px !important;color:#000000;'>&#57902;</span> Features</h4>
+<ul class="styled-list  icon-accent2">
+<li class=" icon-b theme" data-icon="&#57351;">Retina ready</li>
+<li class=" icon-b theme" data-icon="&#57351;">Responsive liquid layout.</li>
+</ul>
+<div class="push" style='height:20px'></div>
+<h4><span class='icon shortcode  ' style='font-size:28px !important;color:#000000;'>&#57670;</span> Theme options</h4>
+<ul class="styled-list  icon-accent2">
+<li class=" icon-b theme" data-icon="&#57351;">Revolutionary and easy .</li>
+<li class=" icon-b theme" data-icon="&#57351;">Revamped Option Panel.</li>
+</ul>
+</div></div>
+<div class="wpv-accordion-wrapper"><div class="accordion" data-collapsible="true"><h4 class="tab"><div class="inner">Get the code</div></h4><div class="pane"><div class="inner"><pre class="pre">[column width="1/4" title="" title_type="single" animation="none" implicit="true"]
+&lt;h3&gt;Professional translation&lt;/h3&gt;
+&lt;strong&gt;Makalu is professionally translated into English, French, German, Italian, Portuguese, Russian and Spanish.&lt;/strong&gt;
+
+Full localization support for the languages that have not been translated yet (contains .po/.mo files) All of our themes have been localized for easy translation.
+
+[/column]
+
+[column width="1/4" title="" title_type="single" animation="none" implicit="true"]
+&lt;h4&gt;[icon name="clock1" color="accent2" size="28" inverted_colors="false"]  Top notch support&lt;/h4&gt;
+[list style="theme-arrow-right" color="accent2"]
+&lt;ul&gt;
+	&lt;li&gt;Help Desk with dedicated staff.&lt;/li&gt;
+	&lt;li&gt;Response times  8 hours.&lt;/li&gt;
+&lt;/ul&gt;
+[/list][push h="20"]
+&lt;h4&gt;[icon name="cog" color="accent2" size="28" inverted_colors="false"] Theme options&lt;/h4&gt;
+[list style="theme-arrow-right" color="accent2"]
+&lt;ul&gt;
+	&lt;li&gt;Revolutionary and easy .&lt;/li&gt;
+	&lt;li&gt;Revamped Option Panel.&lt;/li&gt;
+&lt;/ul&gt;
+[/list]
+
+[/column]
+
+[column width="1/4" title="" title_type="single" animation="none" implicit="true"]
+&lt;h4&gt;[icon name="alarm" color="accent2" size="28" inverted_colors="false"]  New in Makalu&lt;/h4&gt;
+[list style="theme-arrow-right" color="accent2"]
+&lt;ul&gt;
+	&lt;li&gt;Revolutionary and easy .&lt;/li&gt;
+	&lt;li&gt;Revamped  Option Panel.&lt;/li&gt;
+&lt;/ul&gt;
+[/list][push h="20"]
+&lt;h4&gt;[icon name="cube" color="accent2" size="28" inverted_colors="false"]  Endless layouts&lt;/h4&gt;
+[list style="theme-arrow-right" color="accent2"]
+&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;Boxed and full-width layout.&lt;/strong&gt;&lt;/li&gt;
+	&lt;li&gt;Enable disable responsiveness.&lt;/li&gt;
+&lt;/ul&gt;
+[/list]
+
+[/column]
+
+[column width="1/4" last="true" title="" title_type="single" animation="none" implicit="true"]
+&lt;h4&gt;[icon name="cool" color="accent2" size="28" inverted_colors="false"] Features&lt;/h4&gt;
+[list style="theme-arrow-right" color="accent2"]
+&lt;ul&gt;
+	&lt;li&gt;Retina ready&lt;/li&gt;
+	&lt;li&gt;Responsive liquid layout.&lt;/li&gt;
+&lt;/ul&gt;
+[/list][push h="20"]
+&lt;h4&gt;[icon name="cog1" color="accent2" size="28" inverted_colors="false"] Theme options&lt;/h4&gt;
+[list style="theme-arrow-right" color="accent2"]
+&lt;ul&gt;
+	&lt;li&gt;Revolutionary and easy .&lt;/li&gt;
+	&lt;li&gt;Revamped Option Panel.&lt;/li&gt;
+&lt;/ul&gt;
+[/list]
+
+[/column]</pre></div></div></div></div>
+<div class="push" style='height:30px'></div>
+<div class="sep-text single centered">
+<span class="sep-text-before"><div class="sep-text-line"></div></span>
+<div class="content">
+<h2 class="text-divider-double">
+Services Style 13
+</h2> </div>
+<span class="sep-text-after"><div class="sep-text-line"></div></span>
+</div>
+<div class="row "><div class="wpv-grid grid-1-4  wpv-first-level first unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-f2331e3446774486c4139f02583ce2c5"><h4>What we do best</h4>
+<p>Which instilled us with some important lessons about<br />
+the digital space: how to think in all four dimensions.</p>
+<p>Which instilled us with some important lessons about.</p>
+<div class="push" style='height:5px'></div><a style='font-size: 12px;' class="vamtam-button accent1   alignleft"><span class="btext">Get a Quote</span><span class='icon shortcode  ' style=''>&#57567;</span></a></div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-bad25c035ff05908af8ef047345e6a4b">
+<div data-href="https://vamtam.com" tabindex="1" title="https://vamtam.com" data-target="_blank" class="linkarea clearfix accent7  background-transparent">
+<div class="last"><div class="push" style='height:20px'></div>
+<p style="text-align: center;"><span class='icon shortcode  ' style='font-size:48px !important;color:#000000;'>&#57541;</span><div class="push" style='height:20px'></div>
+<h3 style="text-align: center;">Responsive</h3>
+<p style="text-align: center;"><em>Support for Ipad Iphone and most android devices</em></p>
+<div class="push" style='height:10px'></div></div>
+</div></div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-454182826c6dc0c073b42de4489f4924">
+<div data-href="https://vamtam.com" tabindex="1" title="https://vamtam.com" data-target="_blank" class="linkarea clearfix accent7  background-transparent">
+<div class="last"><div class="push" style='height:20px'></div>
+<p style="text-align: center;"><span class='icon shortcode  ' style='font-size:48px !important;color:#000000;'>&#57541;</span><div class="push" style='height:20px'></div>
+<h3 style="text-align: center;">Responsive</h3>
+<p style="text-align: center;"><em>Support for Ipad Iphone and most android devices</em></p>
+<div class="push" style='height:10px'></div></div>
+</div></div>
+<div class="wpv-grid grid-1-4  wpv-first-level unextended" style="padding-top:0px;padding-bottom:0px" id="wpv-column-45846fdbfc0f978a93df8e87f9c1c7f7">
+<div data-href="https://vamtam.com" tabindex="1" title="https://vamtam.com" data-target="_blank" class="linkarea clearfix accent7  background-transparent">
+<div class="last"><div class="push" style='height:20px'></div>
+<p style="text-align: center;"><span class='icon shortcode  ' style='font-size:48px !important;color:#000000;'>&#57541;</span><div class="push" style='height:20px'></div>
+<h3 style="text-align: center;">Responsive</h3>
+<p style="text-align: center;"><em>Support for Ipad Iphone and most android devices</em></p>
+<div class="push" style='height:10px'></div></div>
+</div></div></div>
+<div class="wpv-accordion-wrapper"><div class="accordion" data-collapsible="true"><h4 class="tab"><div class="inner">Get the code</div></h4><div class="pane"><div class="inner"><pre class="pre">[column width="1/4" title="" title_type="single" animation="none" implicit="true"]
+&lt;h4&gt;What we do best&lt;/h4&gt;
+Which instilled us with some important lessons about
+the digital space: how to think in all four dimensions.
+
+Which instilled us with some important lessons about.
+
+[push h="5"][button id="" class="" font="12" align="left" link="" linkTarget="" bgColor="accent1" icon="forward" icon_color="" icon_placement="right"]Get a Quote[/button]
+
+[/column]
+
+[column width="1/4" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="" hover_color="accent7" href="https://vamtam.com" target="_blank" icon="" icon_color="accent6" icon_size="62" image=""]
+[push h="20"]
+&lt;p style="text-align: center;"&gt;[icon name="mobile" color="accent2" size="48" inverted_colors="false"][push h="20"]&lt;/p&gt;
+
+&lt;h3 style="text-align: center;"&gt;Responsive&lt;/h3&gt;
+&lt;p style="text-align: center;"&gt;&lt;em&gt;Support for Ipad Iphone and most android devices&lt;/em&gt;&lt;/p&gt;
+[push h="10"]
+
+[/linkarea]
+
+[/column]
+
+[column width="1/4" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="" hover_color="accent7" href="https://vamtam.com" target="_blank" icon="" icon_color="accent6" icon_size="62" image=""]
+[push h="20"]
+&lt;p style="text-align: center;"&gt;[icon name="mobile" color="accent2" size="48" inverted_colors="false"][push h="20"]&lt;/p&gt;
+
+&lt;h3 style="text-align: center;"&gt;Responsive&lt;/h3&gt;
+&lt;p style="text-align: center;"&gt;&lt;em&gt;Support for Ipad Iphone and most android devices&lt;/em&gt;&lt;/p&gt;
+[push h="10"]
+
+[/linkarea]
+
+[/column]
+
+[column width="1/4" last="true" title="undefined" title_type="undefined" animation="none" implicit="true"]
+
+[linkarea background_color="" hover_color="accent7" href="https://vamtam.com" target="_blank" icon="" icon_color="accent6" icon_size="62" image=""]
+[push h="20"]
+&lt;p style="text-align: center;"&gt;[icon name="mobile" color="accent2" size="48" inverted_colors="false"][push h="20"]&lt;/p&gt;
+
+&lt;h3 style="text-align: center;"&gt;Responsive&lt;/h3&gt;
+&lt;p style="text-align: center;"&gt;&lt;em&gt;Support for Ipad Iphone and most android devices&lt;/em&gt;&lt;/p&gt;
+[push h="10"]
+
+[/linkarea]
+
+[/column]</pre></div></div></div></div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</div>
+</div>
+<footer class="main-footer">
+<div class="footer-sidebars-wrapper">
+<div id="footer-sidebars" data-rows="3">
+<div class="row" data-num="0">
+<aside class="cell-1-3  fit">
+<section id="text-10" class="widget widget_text"> <div class="textwidget"><div class="push" style='height:30px'></div>
+<h2 style="text-align: center;"><span style="color: #cacaca;">WELCOME</span></h2>
+<h6 style="text-align: center;">ON THURSDAY &#8211; 31 OCTOBER 2021</h6>
+<div class="push" style='height:15px'></div>
+</div>
+</section> </aside>
+<aside class="cell-1-3  fit">
+<section id="text-12" class="widget widget_text"> <div class="textwidget"><img class="aligncenter size-full wp-image-6629" alt="illustratation8" src="../../../wp-content/uploads/2013/03/illustratation81.png" width="123" height="118" />
+</div>
+</section> </aside>
+<aside class="cell-1-3  last fit">
+<section id="text-11" class="widget widget_text"> <div class="textwidget"><div class="push" style='height:30px'></div>
+<h2 style="text-align: center;"><span style="color: #cacaca;">CONTACT US</span></h2>
+<h6 style="text-align: center;"><a title="Contact Us" href="../../../pages/contact-us/index.html"><span style="color: #cacaca;">NICK SMITH &amp; SARAH BELLUCCI</span></a></h6></div>
+</section> </aside>
+</div>
+</div>
+</div>
+</footer>
+<div class="copyrights">
+<div class="limit-wrapper">
+<div class="row">
+<div class="push" style='height:100px'></div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="scroll-to-top" class="icon">&#58006;</div>
+<script id='wpvpm-menu-item' type='text/html'><li>
+	<% if(children.length > 0) { %>
+		<a href="#" class="has-children <%= _.escape(classes.join(' ')) %>" title="<%= _.escape(attr_title) %>"><%= title %></a>
+		<div class="mp-level">
+			<div class="mp-level-header">
+				<h2><%= title %></h2>
+				<a class="mp-back" href="#"><%= WpvPushMenu.back %></a>
+			</div>
+			<ul>
+				<% if(! (/^\s*$/.test(url)) ) { %>
+					<li><a href="<%= _.escape(url) %>" class="<%= _.escape(classes.join(' ')) %>" title="<%= _.escape(attr_title) %>"><%= title %></a></li>
+				<% } %>
+				<%= content %>
+			</ul>
+		</div>
+	<% } else { %>
+		<a href="<%= _.escape(url) %>" class="<%= _.escape(classes.join(' ')) %>" title="<%= _.escape(attr_title) %>"><%= title %></a>
+	<% } %>
+</li></script><script id='wpvpm-menu-root' type='text/html'><nav id="mp-menu" class="mp-menu">
+	<ul>
+		<%= content %>
+	</ul>
+</nav>
+</script><script type='text/javascript' src='../../../wp-includes/js/dist/vendor/wp-polyfill.min89b1.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="../../../wp-includes/js/dist/vendor/wp-polyfill-fetch.min6e0e.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="../../../wp-includes/js/dist/vendor/wp-polyfill-node-contains.min2e00.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="../../../wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min2e00.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="../../../wp-includes/js/dist/vendor/wp-polyfill-url.min5aed.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="../../../wp-includes/js/dist/vendor/wp-polyfill-formdata.mine9bd.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="../../../wp-includes/js/dist/vendor/wp-polyfill-element-closest.min4c56.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="../../../wp-includes/js/dist/vendor/wp-polyfill-object-fit.min531b.js?ver=2.3.4"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' src='../../../wp-includes/js/dist/hooks.minc5c2.js?ver=d0188aa6c336f8bb426fe5318b7f5b72' id='wp-hooks-js'></script>
+<script type='text/javascript' src='../../../wp-includes/js/dist/i18n.min802d.js?ver=6ae7d829c963a7d8856558f3f9b32b43' id='wp-i18n-js'></script>
+<script type='text/javascript' id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' src='../../../wp-includes/js/dist/vendor/lodash.mind1d1.js?ver=4.17.21' id='lodash-js'></script>
+<script type='text/javascript' id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script type='text/javascript' src='../../../wp-includes/js/dist/url.min6168.js?ver=b2a17503b1ff42b789ce34b159a311cf' id='wp-url-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type='text/javascript' src='../../../wp-includes/js/dist/api-fetch.minaef8.js?ver=25cbf3644d200bdc5cab50e7966b5b03' id='wp-api-fetch-js'></script>
+<script type='text/javascript' id='wp-api-fetch-js-after'>
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "../../../wp-json/index.html" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "977072d5b0" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "../../../wp-admin/admin-ajaxf809.html?action=rest-nonce";
+</script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/contact-form-7/includes/js/index91d5.js?ver=5.4' id='contact-form-7-js'></script>
+<script type='text/javascript' src='../../../wp-includes/js/underscore.min4511.js?ver=1.8.3' id='underscore-js'></script>
+<script type='text/javascript' src='../../../wp-includes/js/backbone.min2fca.js?ver=1.4.0' id='backbone-js'></script>
+<script type='text/javascript' id='vamtam-push-menu-js-extra'>
+/* <![CDATA[ */
+var WpvPushMenu = {"items":{"title":"Menu","description":"","type":"root","children":[{"title":"HOME","description":"","type":"item","children":[{"url":"https:\/\/the-wedding-day.vamtam.com\/","title":"HOME","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page","menu-item-home"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/","title":"Home","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page","menu-item-home"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/home-layouts\/home-2\/","title":"Home 2","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/get-codes-3\/","title":"Get all codes","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]}]},{"title":"THE WEDDING","description":"","type":"item","children":[{"title":"Wedding blog","description":"","type":"item","children":[{"url":"https:\/\/the-wedding-day.vamtam.com\/blog\/blog-layout-3\/","title":"Newspaper Style","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/blog\/blog-post-formats\/","title":"Blog Post Formats","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]}]},{"url":"https:\/\/the-wedding-day.vamtam.com\/pages\/story\/","title":"Our Story","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/pages\/about-us\/","title":"The ceremony","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/pages\/our-mission\/","title":"The party","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/pages\/bridesmaids\/","title":"Bridesmaids","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/pages\/groomsmen\/","title":"Groomsmen","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/pages\/contact-us\/","title":"Contact Us","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/get-codes\/","title":"Get all codes","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]}]},{"title":"PHOTO ALBUM","description":"","type":"item","children":[{"url":"https:\/\/the-wedding-day.vamtam.com\/portfolio-layouts\/masonry-style\/","title":"The Party","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/portfolio-layouts\/sortable-4-columns\/","title":"Simple Gallery","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/get-codes-2\/","title":"Get all codes","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]}]},{"url":"https:\/\/the-wedding-day.vamtam.com\/pages\/guestbook\/","title":"GUESTBOOK","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"title":"FEATURES","description":"","type":"item","children":[{"title":"Templates","description":"","type":"item","children":[{"url":"https:\/\/the-wedding-day.vamtam.com\/templates\/blanc-page\/","title":"Coming Soon Page","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/templates\/maintenance-mode\/","title":"Maintenance Mode","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/templates\/body-top-widget-area\/","title":"Body Top Widget Area","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/templates\/right-sidebar\/","title":"Right Sidebar","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/templates\/left-sidebar\/","title":"Left Sidebar","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/templates\/two-sidebars\/","title":"Two Sidebars","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/?s=test","title":"Search","attr_title":"","description":"","classes":["","menu-item","menu-item-type-custom","menu-item-object-custom"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/404-404","title":"Page Not Found","attr_title":"","description":"","classes":["","menu-item","menu-item-type-custom","menu-item-object-custom"],"type":"item","children":[]}]},{"url":"https:\/\/the-wedding-day.vamtam.com\/feature\/elements\/typography\/","title":"Typography","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/feature\/elements\/icons\/","title":"Icons","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/feature\/why-buy-the-theme\/","title":"Why Buy The Theme","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/feature\/hall-of-fame\/","title":"Hall of Fame","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]},{"url":"https:\/\/the-wedding-day.vamtam.com\/feature\/theme-options-2\/","title":"Theme Options","attr_title":"","description":"","classes":["","menu-item","menu-item-type-post_type","menu-item-object-page"],"type":"item","children":[]}]}]},"back":"Back","jspath":"https:\/\/the-wedding-day.vamtam.com\/wp-content\/plugins\/vamtam-push-menu\/js\/","limit":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/vamtam-push-menu/js/dist/push-menu.mine823.js?ver=2.0.13' id='vamtam-push-menu-js'></script>
+<script type='text/javascript' src='../../../wp-content/themes/the-wedding-day/vamtam/assets/js/plugins/thirdparty/jquery.transit.mine2dc.js?ver=0.9.9' id='jquery-transit-js'></script>
+<script type='text/javascript' src='../../../wp-content/themes/the-wedding-day/vamtam/assets/js/plugins/thirdparty/jquery.matchheight.mind633.js?ver=0.5.1' id='jquery-match-height-js'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/core.min35d0.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/effect.min35d0.js?ver=1.12.1' id='jquery-effects-core-js'></script>
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='../../../wp-includes/js/mediaelement/mediaelement-and-player.min08e1.js?ver=4.2.16' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='../../../wp-includes/js/mediaelement/mediaelement-migrate.min76f3.js?ver=5.7.3' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-includes/js/mediaelement/wp-mediaelement.min76f3.js?ver=5.7.3' id='wp-mediaelement-js'></script>
+<script type='text/javascript' id='vamtam-all-js-extra'>
+/* <![CDATA[ */
+var VAMTAM_FRONT = {"content_width":"1080","cube_path":"https:\/\/the-wedding-day.vamtam.com\/wp-content\/themes\/the-wedding-day\/vamtam\/assets\/cubeportfolio\/js\/jquery.cubeportfolio.min.js","ajaxurl":"https:\/\/the-wedding-day.vamtam.com\/wp-admin\/admin-ajax.php","gmap_api_key":"AIzaSyB3xkOvHVgXNdDnPypL561Z2aWyEO1Xt9w"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/themes/the-wedding-day/vamtam/assets/js/all.mina14b.js?ver=24' id='vamtam-all-js'></script>
+<script type='text/javascript' src='../../../wp-includes/js/wp-embed.min76f3.js?ver=5.7.3' id='wp-embed-js'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/accordion.min35d0.js?ver=1.12.1' id='jquery-ui-accordion-js'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/ui/tabs.min35d0.js?ver=1.12.1' id='jquery-ui-tabs-js'></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"9700abca30","applicationID":"9339867","transactionName":"YFUHbUVUDBZZAkZZXFkfJFpDXA0LFxFTV1Y=","queueTime":0,"applicationTime":549,"atts":"TBIEGw1OHxg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from the-wedding-day.vamtam.com/feature/elements/drag-drop-elements-2/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Nov 2021 15:12:50 GMT -->
+</html>
+
